@@ -499,3 +499,5 @@ Assets/Oculus
 Assets/Oculus.meta
 Assets/Resources/OVRPlatformToolSettings.asset
 Assets/Resources/OVRPlatformToolSettings.asset.meta
+*.dwlt
+UserSettings/EditorUserSettings.asset
