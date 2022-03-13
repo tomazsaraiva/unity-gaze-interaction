@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.30704877, g: 0.6832834, b: 0.9433962, a: 1}
+  m_Color: {r: 0, g: 0.6754477, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.31764707, g: 0.63529414, b: 0.85490197, a: 1}
+  m_Color: {r: 0, g: 0.534517, b: 0.7924528, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -302,3 +302,4 @@ MonoBehaviour:
   _canvas: {fileID: 5284516316043185477}
   _imageProgress: {fileID: 295726800}
   _scale: 0.001
+  _offsetFromHit: 0.1

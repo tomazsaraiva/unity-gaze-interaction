@@ -21,7 +21,6 @@ namespace TS.GazeInteraction
         private GazeInteractable _interactable;
 
         private float _enterStartTime;
-        private bool _activated;
 
         #endregion
 
@@ -45,24 +44,24 @@ namespace TS.GazeInteraction
                 var distance = Vector3.Distance(transform.position, _hit.transform.position);
                 if (distance < _minDetectionDistance)
                 {
+                    _reticle.Enable(false);
                     Reset();
                     return;
                 }
 
                 _reticle.SetTarget(_hit);
+                _reticle.Enable(true);
 
                 var interactable = _hit.collider.transform.GetComponent<GazeInteractable>();
                 if(interactable == null)
                 {
                     Reset();
-                    _reticle.Enable(true);
                     return;
                 }
 
                 if (interactable != _interactable)
                 {
                     Reset();
-                    _reticle.Enable(true);
 
                     _enterStartTime = Time.time;
 
@@ -80,10 +79,8 @@ namespace TS.GazeInteraction
 
                     _reticle.SetProgress(progress);
 
-                    if (progress == 1 && !_activated)
+                    if (progress == 1)
                     {
-                        _activated = true;
-
                         _reticle.Enable(false);
                         _interactable.Activate();
                     }
@@ -92,14 +89,13 @@ namespace TS.GazeInteraction
                 return;
             }
 
+            _reticle.Enable(false);
             Reset();
         }
 
         private void Reset()
         {
-            _reticle.Enable(false);
             _reticle.SetProgress(0);
-            _activated = false;
 
             if(_interactable == null) { return; }
             _interactable.GazeExit(this);

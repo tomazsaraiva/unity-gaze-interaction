@@ -29,13 +29,12 @@ namespace TS.GazeInteraction
         [SerializeField] private bool _isActivable;
         [SerializeField] private float _exitDelay;
 
+        [Header("Events")]
         public UnityEvent OnGazeEnter;
         public UnityEvent OnGazeStay;
         public UnityEvent OnGazeExit;
-
-        public UnityEvent<bool> OnGazeToggle;
-
         public UnityEvent OnGazeActivated;
+        public UnityEvent<bool> OnGazeToggle;
 
         public bool IsEnabled
         {

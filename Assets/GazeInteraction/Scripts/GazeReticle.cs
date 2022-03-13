@@ -19,6 +19,7 @@ namespace TS.GazeInteraction
 
         [Header("Configuration")]
         [SerializeField] private float _scale = 0.0015f;
+        [SerializeField] private float _offsetFromHit = 0.1f;
 
         private GazeInteractor _interactor;
 
@@ -41,6 +42,7 @@ namespace TS.GazeInteraction
         public void SetInteractor(GazeInteractor interactor)
         {
             _interactor = interactor;
+            enabled = true;
         }
         public void Enable(bool enable)
         {
@@ -51,7 +53,7 @@ namespace TS.GazeInteraction
         {
             var direction = _interactor.transform.position - hit.point;
             var rotation = Quaternion.FromToRotation(Vector3.forward, direction);
-            var position = hit.point; // + transform.forward * 0.1f;
+            var position = hit.point + transform.forward * _offsetFromHit;
 
             transform.SetPositionAndRotation(position, rotation);
         }
