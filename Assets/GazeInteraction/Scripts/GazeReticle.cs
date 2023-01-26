@@ -9,6 +9,9 @@ using UnityEngine.UI;
 
 namespace TS.GazeInteraction
 {
+    /// <summary>
+    /// Visual representation of the point of interaction.
+    /// </summary>
     public class GazeReticle : MonoBehaviour
     {
         #region Variables
@@ -39,16 +42,29 @@ namespace TS.GazeInteraction
             _canvas.transform.localScale = Vector3.one * scale;
         }
 
+        /// <summary>
+        /// Assigns the GazeInteractor using this reticle.
+        /// </summary>
+        /// <param name="interactor"></param>
         public void SetInteractor(GazeInteractor interactor)
         {
             _interactor = interactor;
             enabled = true;
         }
+
+        /// <summary>
+        /// Toggles the GameObject.
+        /// </summary>
+        /// <param name="enable"></param>
         public void Enable(bool enable)
         {
             gameObject.SetActive(enable);
         }
 
+        /// <summary>
+        /// Assigns the current hit point to adjust the reticle position and rotation.
+        /// </summary>
+        /// <param name="hit"></param>
         public void SetTarget(RaycastHit hit)
         {
             var direction = _interactor.transform.position - hit.point;
@@ -57,6 +73,11 @@ namespace TS.GazeInteraction
 
             transform.SetPositionAndRotation(position, rotation);
         }
+
+        /// <summary>
+        /// Updates the progress visual indicator.
+        /// </summary>
+        /// <param name="progress"></param>
         public void SetProgress(float progress)
         {
             _imageProgress.fillAmount = progress;

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace TS.GazeInteraction
 {
+    /// <summary>
+    /// Component responsible for managing the gaze interaction.
+    /// </summary>
     public class GazeInteractor : MonoBehaviour
     {
         #region Variables
