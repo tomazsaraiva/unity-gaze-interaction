@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gaze Interaction System | Gaze Interaction System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Gaze Interaction System | Gaze Interaction System ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="gaze-interaction-system">Gaze Interaction System</h1>
+
+<p>I based my system on the same approach used in the <a href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/index.html">Unity XR Interaction Toolkit</a>.</p>
+<p>So, we have one <a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> that communicates with <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractables</a> scattered through the environment.</p>
+<p>The <a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> is a child of a Camera that sends raycasts looking for <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractables</a>. These in turn, when interacted with, invoke events that we can connect to other objects.</p>
+<h2 id="setup">Setup</h2>
+<ol>
+<li><p>Add a <a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> as a child of the main Camera; <img src="images/unity_gaze_interactor.png" alt="unity_gaze_interactor.png"></p>
+</li>
+<li><p>Add <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractables</a> and connect the events to trigger the desired behaviours. <img src="images/unity_gaze_interactable.png" alt="f838ee23d40c5c4a78188618c0d7ee66.png"></p>
+</li>
+</ol>
+<p>The basic setup is quite simple. But, you have many options in each component to configure it even further.</p>
+<p>If you want to include it in your own project, download the package from <a href="https://github.com/tomazsaraiva/unity-gaze-interaction/releases">GitHub</a>.</p>
+<p>All feedback and contributions are more than welcome.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
