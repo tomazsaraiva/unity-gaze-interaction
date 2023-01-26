@@ -1,9 +1,11 @@
-name: Example documentation
+name: Generate documentation
 
 on:
   push:
     branches:
       - main
+      
+  workflow_dispatch:
 
 jobs:
   # Build the documentation
