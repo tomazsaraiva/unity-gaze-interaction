@@ -7,6 +7,9 @@ using UnityEngine.Events;
 
 namespace TS.GazeInteraction
 {
+    /// <summary>
+    /// Component applied to GameObjects that can be interacted with using the gaze.
+    /// </summary>
     public class GazeInteractable : MonoBehaviour
     {
         #region Variables
@@ -64,10 +67,18 @@ namespace TS.GazeInteraction
             enabled = false;
         }
 
+        /// <summary>
+        ///  Toggles the GameObject.
+        /// </summary>
+        /// <param name="enable"></param>
         public void Enable(bool enable)
         {
             gameObject.SetActive(enable);
         }
+
+        /// <summary>
+        /// Invokes the Activated events.
+        /// </summary>
         public void Activate()
         {
             IsActivated = true;
@@ -76,6 +87,12 @@ namespace TS.GazeInteraction
             OnGazeActivated?.Invoke();
         }
 
+        /// <summary>
+        /// Called by the GazeInteractor when the gaze enters this Interactable.
+        /// Invokes the Enter events.
+        /// </summary>
+        /// <param name="interactor"></param>
+        /// <param name="point"></param>
         public void GazeEnter(GazeInteractor interactor, Vector3 point)
         {
             StopCoroutine(WAIT_TO_EXIT_COROUTINE);
@@ -85,12 +102,23 @@ namespace TS.GazeInteraction
             OnGazeEnter?.Invoke();
             OnGazeToggle?.Invoke(true);
         }
+        /// <summary>
+        /// Called by the GazeInteractor while the gaze stays on top of this Interactable.
+        /// Invokes the Stay events.
+        /// </summary>
+        /// <param name="interactor"></param>
+        /// <param name="point"></param>
         public void GazeStay(GazeInteractor interactor, Vector3 point)
         {
             Stay?.Invoke(this, interactor, point);
 
             OnGazeStay?.Invoke();
         }
+        /// <summary>
+        /// Called by the GazeInteractor when the gaze exits this Interactable.
+        /// Invokes the Exit events.
+        /// </summary>
+        /// <param name="interactor"></param>
         public void GazeExit(GazeInteractor interactor)
         {
             if(gameObject.activeInHierarchy)
