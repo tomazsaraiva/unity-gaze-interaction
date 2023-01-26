@@ -55,7 +55,7 @@
                 ]
             }
         ],
-        "dest": "_site",
+        "dest": "../_site",
         "globalMetadataFiles": [],
         "fileMetadataFiles": [],
         "template": [
