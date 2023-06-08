@@ -18,3 +18,8 @@ The basic setup is quite simple. But, you have many options in each component to
 If you want to include it in your own project, download the package from [GitHub](https://github.com/tomazsaraiva/unity-gaze-interaction/releases).
 
 All feedback and contributions are more than welcome.
+
+## Links
+- [Online Documentation and API](https://www.tomazsaraiva.com/unity-gaze-interaction/);
+- [GitHub repository](https://github.com/tomazsaraiva/unity-gaze-interaction/);
+- [Explanation Video](https://www.youtube.com/watch?v=8p4erfeWatA&list=PLBBRLwJVhEhNeLRaBjJh7O8cvGHFKOpGW&index=1).
