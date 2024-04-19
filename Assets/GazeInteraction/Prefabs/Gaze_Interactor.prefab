@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8931349315968662424}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8931349315968662430
 MonoBehaviour:
@@ -44,6 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e10773052cfe849a7ffb2a7a1045e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _reticlePrefab: {fileID: 7802751703812483504, guid: 965ac2876a19002499a5ff783269d54b, type: 3}
-  _minDistanceToDetect: 10
+  _maxDetectionDistance: 0
+  _minDetectionDistance: 0
   _timeToActivate: 3
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _reticleType: 0
