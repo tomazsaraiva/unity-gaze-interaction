@@ -30,11 +30,11 @@ namespace TS.GazeInteraction
         private void Start()
         {
             var instance = ResourcesManager.GetPrefab(ResourcesManager.FILE_PREFAB_RETICLE);
-            var reticle = instance.GetComponent<GazeReticle>();
 
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
-            if(reticle == null) { throw new System.Exception("Missing GazeReticle"); }
-#endif
+            if (!instance.TryGetComponent<GazeReticle>(out var reticle))
+            {
+                Debug.LogError("Missing GazeReticle");
+            }
 
             _reticle = Instantiate(reticle);
             _reticle.SetInteractor(this);

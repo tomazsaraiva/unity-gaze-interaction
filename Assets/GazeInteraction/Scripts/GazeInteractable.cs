@@ -56,11 +56,10 @@ namespace TS.GazeInteraction
 
         private void Awake()
         {
-            _collider = GetComponent<Collider>();
-
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
-            if(_collider == null) { throw new System.Exception("Missing Collider"); }
-#endif
+            if (!TryGetComponent<Collider>(out _collider))
+            {
+                Debug.LogError("Missing Collider");
+            }
         }
         private void Start()
         {
