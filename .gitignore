@@ -504,3 +504,4 @@ Assets/Resources/OVRPlatformToolSettings.asset
 Assets/Resources/OVRPlatformToolSettings.asset.meta
 *.dwlt
 UserSettings/EditorUserSettings.asset
+.vscode

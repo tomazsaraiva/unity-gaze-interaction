@@ -5,17 +5,28 @@ using UnityEngine;
 namespace TS.GazeInteraction
 {
     /// <summary>
-    /// Component responsible for managing the gaze interaction.
+    /// Manages gaze-based interactions with interactables.
     /// </summary>
     public class GazeInteractor : MonoBehaviour
     {
         #region Variables
 
         [Header("Configuration")]
+
+        [Tooltip("The maximum distance for gaze detection.")]
         [SerializeField] private float _maxDetectionDistance;
+
+        [Tooltip("The minimum distance for gaze detection.")]
         [SerializeField] private float _minDetectionDistance;
+
+        [Tooltip("Time required for activation.")]
         [SerializeField] private float _timeToActivate = 1.0f;
+
+        [Tooltip("Layer mask for raycasting.")]
         [SerializeField] private LayerMask _layerMask;
+
+        [Tooltip("Type of reticle (visual feedback) to display.")]
+        [SerializeField] private ReticleType _reticleType;
 
         private Ray _ray;
         private RaycastHit _hit;
@@ -27,18 +38,26 @@ namespace TS.GazeInteraction
 
         #endregion
 
+        /// <summary>
+        /// Initializes the GazeInteractor by instantiating a reticle (visual indicator) based on a prefab.
+        /// </summary>
         private void Start()
         {
             var instance = ResourcesManager.GetPrefab(ResourcesManager.FILE_PREFAB_RETICLE);
-            var reticle = instance.GetComponent<GazeReticle>();
-
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
-            if(reticle == null) { throw new System.Exception("Missing GazeReticle"); }
-#endif
+            if (!instance.TryGetComponent<GazeReticle>(out var reticle))
+            {
+                Debug.LogError("Missing GazeReticle");
+            }
 
             _reticle = Instantiate(reticle);
+            _reticle.SetType(_reticleType);
             _reticle.SetInteractor(this);
         }
+
+        /// <summary>
+        /// Handles raycasting to detect gaze interactions. If an object is within the specified distance,
+        /// the reticle is enabled and interactions are processed.
+        /// </summary>
         private void Update()
         {
             _ray = new Ray(transform.position, transform.forward);
@@ -56,7 +75,7 @@ namespace TS.GazeInteraction
                 _reticle.Enable(true);
 
                 var interactable = _hit.collider.transform.GetComponent<GazeInteractable>();
-                if(interactable == null)
+                if (interactable == null)
                 {
                     Reset();
                     return;
@@ -96,11 +115,14 @@ namespace TS.GazeInteraction
             Reset();
         }
 
+        /// <summary>
+        /// Resets the interaction state.
+        /// </summary>
         private void Reset()
         {
             _reticle.SetProgress(0);
 
-            if(_interactable == null) { return; }
+            if (_interactable == null) { return; }
             _interactable.GazeExit(this);
             _interactable = null;
         }
