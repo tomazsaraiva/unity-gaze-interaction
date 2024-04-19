@@ -25,6 +25,7 @@ namespace TS.GazeInteraction
         [SerializeField] private float _offsetFromHit = 0.1f;
 
         private GazeInteractor _interactor;
+        private ReticleType _type;
 
         #endregion
 
@@ -34,7 +35,7 @@ namespace TS.GazeInteraction
         }
         private void Update()
         {
-            if(_interactor == null) { return; }
+            if (_interactor == null) { return; }
 
             var distance = Vector3.Distance(_interactor.transform.position, transform.position);
             var scale = distance * _scale;
@@ -49,7 +50,19 @@ namespace TS.GazeInteraction
         public void SetInteractor(GazeInteractor interactor)
         {
             _interactor = interactor;
+            transform.SetParent(_interactor.transform);
+
             enabled = true;
+        }
+
+        public void SetType(ReticleType type)
+        {
+            _type = type;
+
+            if (_type == ReticleType.Invisible)
+            {
+                Enable(false);
+            }
         }
 
         /// <summary>
@@ -58,6 +71,9 @@ namespace TS.GazeInteraction
         /// <param name="enable"></param>
         public void Enable(bool enable)
         {
+            if (_type == ReticleType.Invisible && enable ||
+                _type == ReticleType.Visible && !enable) return;
+
             gameObject.SetActive(enable);
         }
 
@@ -69,9 +85,9 @@ namespace TS.GazeInteraction
         {
             var direction = _interactor.transform.position - hit.point;
             var rotation = Quaternion.FromToRotation(Vector3.forward, direction);
-            var position = hit.point + transform.forward * _offsetFromHit;
+            var targetPosition = hit.point + transform.forward * _offsetFromHit;
 
-            transform.SetPositionAndRotation(position, rotation);
+            transform.SetPositionAndRotation(targetPosition, rotation);
         }
 
         /// <summary>

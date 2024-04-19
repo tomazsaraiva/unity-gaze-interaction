@@ -16,6 +16,7 @@ namespace TS.GazeInteraction
         [SerializeField] private float _minDetectionDistance;
         [SerializeField] private float _timeToActivate = 1.0f;
         [SerializeField] private LayerMask _layerMask;
+        [SerializeField] private ReticleType _reticleType;
 
         private Ray _ray;
         private RaycastHit _hit;
@@ -30,13 +31,13 @@ namespace TS.GazeInteraction
         private void Start()
         {
             var instance = ResourcesManager.GetPrefab(ResourcesManager.FILE_PREFAB_RETICLE);
-
             if (!instance.TryGetComponent<GazeReticle>(out var reticle))
             {
                 Debug.LogError("Missing GazeReticle");
             }
 
             _reticle = Instantiate(reticle);
+            _reticle.SetType(_reticleType);
             _reticle.SetInteractor(this);
         }
         private void Update()
