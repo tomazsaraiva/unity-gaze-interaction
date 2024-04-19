@@ -5,17 +5,27 @@ using UnityEngine;
 namespace TS.GazeInteraction
 {
     /// <summary>
-    /// Component responsible for managing the gaze interaction.
+    /// Manages gaze-based interactions with interactables.
     /// </summary>
     public class GazeInteractor : MonoBehaviour
     {
         #region Variables
 
         [Header("Configuration")]
+
+        [Tooltip("The maximum distance for gaze detection.")]
         [SerializeField] private float _maxDetectionDistance;
+
+        [Tooltip("The minimum distance for gaze detection.")]
         [SerializeField] private float _minDetectionDistance;
+
+        [Tooltip("Time required for activation.")]
         [SerializeField] private float _timeToActivate = 1.0f;
+
+        [Tooltip("Layer mask for raycasting.")]
         [SerializeField] private LayerMask _layerMask;
+
+        [Tooltip("Type of reticle (visual feedback) to display.")]
         [SerializeField] private ReticleType _reticleType;
 
         private Ray _ray;
@@ -28,6 +38,9 @@ namespace TS.GazeInteraction
 
         #endregion
 
+        /// <summary>
+        /// Initializes the GazeInteractor by instantiating a reticle (visual indicator) based on a prefab.
+        /// </summary>
         private void Start()
         {
             var instance = ResourcesManager.GetPrefab(ResourcesManager.FILE_PREFAB_RETICLE);
@@ -40,6 +53,11 @@ namespace TS.GazeInteraction
             _reticle.SetType(_reticleType);
             _reticle.SetInteractor(this);
         }
+
+        /// <summary>
+        /// Handles raycasting to detect gaze interactions. If an object is within the specified distance,
+        /// the reticle is enabled and interactions are processed.
+        /// </summary>
         private void Update()
         {
             _ray = new Ray(transform.position, transform.forward);
@@ -97,6 +115,9 @@ namespace TS.GazeInteraction
             Reset();
         }
 
+        /// <summary>
+        /// Resets the interaction state.
+        /// </summary>
         private void Reset()
         {
             _reticle.SetProgress(0);
