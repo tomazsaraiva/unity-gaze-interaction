@@ -17,11 +17,19 @@ namespace TS.GazeInteraction
         #region Variables
 
         [Header("Inner")]
+
+        [Tooltip("The canvas used for rendering the reticle.")]
         [SerializeField] private Canvas _canvas;
+
+        [Tooltip("The image representing the progress or state of interaction.")]
         [SerializeField] private Image _imageProgress;
 
         [Header("Configuration")]
+
+        [Tooltip("Scale factor for adjusting the reticle size.")]
         [SerializeField] private float _scale = 0.0015f;
+
+        [Tooltip("Distance offset from the hit point for positioning the reticle.")]
         [SerializeField] private float _offsetFromHit = 0.1f;
 
         private GazeInteractor _interactor;
@@ -29,10 +37,17 @@ namespace TS.GazeInteraction
 
         #endregion
 
+        // <summary>
+        /// Initializes the GazeReticle by setting the initial scale.
+        /// </summary>
         private void Start()
         {
             _canvas.transform.localScale = Vector3.one * _scale;
         }
+
+        /// <summary>
+        /// Updates the reticle's scale based on the distance from the GazeInteractor.
+        /// </summary>
         private void Update()
         {
             if (_interactor == null) { return; }
@@ -46,7 +61,7 @@ namespace TS.GazeInteraction
         /// <summary>
         /// Assigns the GazeInteractor using this reticle.
         /// </summary>
-        /// <param name="interactor"></param>
+        /// <param name="interactor">The GazeInteractor to associate with this reticle.</param>
         public void SetInteractor(GazeInteractor interactor)
         {
             _interactor = interactor;
@@ -55,6 +70,10 @@ namespace TS.GazeInteraction
             enabled = true;
         }
 
+        /// <summary>
+        /// Sets the type of reticle (visible or invisible).
+        /// </summary>
+        /// <param name="type">The desired reticle type.</param>
         public void SetType(ReticleType type)
         {
             _type = type;
@@ -66,9 +85,9 @@ namespace TS.GazeInteraction
         }
 
         /// <summary>
-        /// Toggles the GameObject.
+        /// Toggles the visibility of the reticle GameObject.
         /// </summary>
-        /// <param name="enable"></param>
+        /// <param name="enable">Whether to enable or disable the reticle.</param>
         public void Enable(bool enable)
         {
             if (_type == ReticleType.Invisible && enable ||
@@ -80,7 +99,7 @@ namespace TS.GazeInteraction
         /// <summary>
         /// Assigns the current hit point to adjust the reticle position and rotation.
         /// </summary>
-        /// <param name="hit"></param>
+        /// <param name="hit">The RaycastHit containing information about the hit point.</param>
         public void SetTarget(RaycastHit hit)
         {
             var direction = _interactor.transform.position - hit.point;
@@ -93,7 +112,7 @@ namespace TS.GazeInteraction
         /// <summary>
         /// Updates the progress visual indicator.
         /// </summary>
-        /// <param name="progress"></param>
+        /// <param name="progress">The progress value (0 to 1) to display.</param>
         public void SetProgress(float progress)
         {
             _imageProgress.fillAmount = progress;
