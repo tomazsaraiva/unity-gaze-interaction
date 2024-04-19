@@ -120,7 +120,7 @@ namespace TS.GazeInteraction
         /// <param name="interactor"></param>
         public void GazeExit(GazeInteractor interactor)
         {
-            if(gameObject.activeInHierarchy)
+            if (gameObject.activeInHierarchy)
             {
                 StartCoroutine(WAIT_TO_EXIT_COROUTINE, interactor);
             }

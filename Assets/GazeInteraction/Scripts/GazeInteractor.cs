@@ -56,7 +56,7 @@ namespace TS.GazeInteraction
                 _reticle.Enable(true);
 
                 var interactable = _hit.collider.transform.GetComponent<GazeInteractable>();
-                if(interactable == null)
+                if (interactable == null)
                 {
                     Reset();
                     return;
@@ -100,7 +100,7 @@ namespace TS.GazeInteraction
         {
             _reticle.SetProgress(0);
 
-            if(_interactable == null) { return; }
+            if (_interactable == null) { return; }
             _interactable.GazeExit(this);
             _interactable = null;
         }
