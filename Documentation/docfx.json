@@ -5,7 +5,7 @@
                 {
                     "src": "../",
                     "files": [
-                        "**/*.csproj"
+                        "*.csproj"
                     ]
                 }
             ],
@@ -33,7 +33,7 @@
         "output": "_site",
         "template": [
             "default",
-            "modern"
+            "unity"
         ],
         "globalMetadata": {
             "_appName": "Gaze Interaction System",
