@@ -1,0 +1,8 @@
+### YamlMime:ManagedReference
+apiRules:
+  - exclude:
+      uidRegex: .* # Every other namespaces are ignored
+      type: Namespace
+  - include: # The namespaces to generate
+      uidRegex: ^TS\.GazeInteraction
+      type: Namespace
