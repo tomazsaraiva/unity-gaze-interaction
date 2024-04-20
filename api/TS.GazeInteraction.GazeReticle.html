@@ -93,7 +93,7 @@
   
   <a id="TS_GazeInteraction_GazeReticle_Enable_" data-uid="TS.GazeInteraction.GazeReticle.Enable*"></a>
   <h4 id="TS_GazeInteraction_GazeReticle_Enable_System_Boolean_" data-uid="TS.GazeInteraction.GazeReticle.Enable(System.Boolean)">Enable(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Toggles the GameObject.</p>
+  <div class="markdown level1 summary"><p>Toggles the visibility of the reticle GameObject.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -113,7 +113,8 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">enable</span></td>
-        <td></td>
+        <td><p>Whether to enable or disable the reticle.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -141,7 +142,8 @@
       <tr>
         <td><a class="xref" href="TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a></td>
         <td><span class="parametername">interactor</span></td>
-        <td></td>
+        <td><p>The GazeInteractor to associate with this reticle.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -169,7 +171,8 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">progress</span></td>
-        <td></td>
+        <td><p>The progress value (0 to 1) to display.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -197,7 +200,37 @@
       <tr>
         <td><span class="xref">RaycastHit</span></td>
         <td><span class="parametername">hit</span></td>
-        <td></td>
+        <td><p>The RaycastHit containing information about the hit point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TS_GazeInteraction_GazeReticle_SetType_" data-uid="TS.GazeInteraction.GazeReticle.SetType*"></a>
+  <h4 id="TS_GazeInteraction_GazeReticle_SetType_TS_GazeInteraction_ReticleType_" data-uid="TS.GazeInteraction.GazeReticle.SetType(TS.GazeInteraction.ReticleType)">SetType(ReticleType)</h4>
+  <div class="markdown level1 summary"><p>Sets the type of reticle (visible or invisible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetType(ReticleType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TS.GazeInteraction.ReticleType.html">ReticleType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The desired reticle type.</p>
+</td>
       </tr>
     </tbody>
   </table>

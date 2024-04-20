@@ -24,7 +24,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnEnter.html",
-          "hash": "AVcXW3fDlvWJ/iZW3Rprg9/eOj6vsTGCq6oSuHq9pQM="
+          "hash": "yTZkC/6fFcAnGcOtetMh4LHpDnikSInZVRqdekbxQ6c="
         }
       },
       "is_incremental": false,
@@ -36,7 +36,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnExit.html",
-          "hash": "/gTZgEgIOtcugPUEmM1m3i664cuazvNmD3/xx7nWpns="
+          "hash": "Rc4ejhqPV/8j9+LOGx4D+jFErmUvLQNq6XEB5i8zkpk="
         }
       },
       "is_incremental": false,
@@ -48,7 +48,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnStay.html",
-          "hash": "IQEABKmrlJBnlB6FX8Kw4ipFBopvrNAZzq31f3sJCPo="
+          "hash": "QSfx8kmfCTyKg0q8jWwX4vOucH6iKD/Ok31LIwJzKYA="
         }
       },
       "is_incremental": false,
@@ -60,7 +60,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.GazeInteractable.html",
-          "hash": "5eM0jWSCNEmA+RR2pRpxCw3+G1QVb8IbGQAsnV8wTXQ="
+          "hash": "wlaYCC+xAotRiVeNpPQlF49Bl7JrWJtI6V7ZZ5e3zsE="
         }
       },
       "is_incremental": false,
@@ -72,7 +72,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.GazeInteractor.html",
-          "hash": "k2T7Y7FMHzj0pi8cevOJ2hFUTTHSfzD/F8+dtkhfpRw="
+          "hash": "8Te1JFIp8ZQ1X1clX0bOYfSlSDi/ayGSwM1xmkosVPA="
         }
       },
       "is_incremental": false,
@@ -84,7 +84,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.GazeReticle.html",
-          "hash": "45GocaO8hA54dh3kxmjZGsXNmSHrOYnhM5dIjHLOjdQ="
+          "hash": "JsS2F1M6yS5uWM5fFOQ8ALrJBB1j6cT58MmkYgwJlgc="
         }
       },
       "is_incremental": false,
@@ -104,11 +104,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.ReticleType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.ReticleType.html",
+          "hash": "Be1/cq7gqGibMI97Re4MuRo0RM0hvUm84prrEc/89Og="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TS.GazeInteraction.yml",
       "output": {
         ".html": {
           "relative_path": "api/TS.GazeInteraction.html",
-          "hash": "TSwxXKU+TgpQUwcfLy0GlmevGn7KDbSHGiLkHvz0c0c="
+          "hash": "8YtSKsXNelsqGhZdUXbuagZ2iGPJnEGmCELjGXfHhpg="
         }
       },
       "is_incremental": false,
@@ -132,7 +144,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fKFmHPLdN29lCZMSD0p9AXzZMToyUcTtQ6IHVUx8OTI="
+          "hash": "qqNyhJ5opp5/bV5uB5YF+QoCVbHFtx60NMacNxj2Zh0="
         }
       },
       "is_incremental": false,
@@ -211,7 +223,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

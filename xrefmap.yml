@@ -259,6 +259,19 @@ references:
   isSpec: "True"
   fullName: TS.GazeInteraction.GazeReticle.SetTarget
   nameWithType: GazeReticle.SetTarget
+- uid: TS.GazeInteraction.GazeReticle.SetType(TS.GazeInteraction.ReticleType)
+  name: SetType(ReticleType)
+  href: api/TS.GazeInteraction.GazeReticle.html#TS_GazeInteraction_GazeReticle_SetType_TS_GazeInteraction_ReticleType_
+  commentId: M:TS.GazeInteraction.GazeReticle.SetType(TS.GazeInteraction.ReticleType)
+  fullName: TS.GazeInteraction.GazeReticle.SetType(TS.GazeInteraction.ReticleType)
+  nameWithType: GazeReticle.SetType(ReticleType)
+- uid: TS.GazeInteraction.GazeReticle.SetType*
+  name: SetType
+  href: api/TS.GazeInteraction.GazeReticle.html#TS_GazeInteraction_GazeReticle_SetType_
+  commentId: Overload:TS.GazeInteraction.GazeReticle.SetType
+  isSpec: "True"
+  fullName: TS.GazeInteraction.GazeReticle.SetType
+  nameWithType: GazeReticle.SetType
 - uid: TS.GazeInteraction.ResourcesManager
   name: ResourcesManager
   href: api/TS.GazeInteraction.ResourcesManager.html
@@ -284,3 +297,27 @@ references:
   isSpec: "True"
   fullName: TS.GazeInteraction.ResourcesManager.GetPrefab
   nameWithType: ResourcesManager.GetPrefab
+- uid: TS.GazeInteraction.ReticleType
+  name: ReticleType
+  href: api/TS.GazeInteraction.ReticleType.html
+  commentId: T:TS.GazeInteraction.ReticleType
+  fullName: TS.GazeInteraction.ReticleType
+  nameWithType: ReticleType
+- uid: TS.GazeInteraction.ReticleType.Default
+  name: Default
+  href: api/TS.GazeInteraction.ReticleType.html#TS_GazeInteraction_ReticleType_Default
+  commentId: F:TS.GazeInteraction.ReticleType.Default
+  fullName: TS.GazeInteraction.ReticleType.Default
+  nameWithType: ReticleType.Default
+- uid: TS.GazeInteraction.ReticleType.Invisible
+  name: Invisible
+  href: api/TS.GazeInteraction.ReticleType.html#TS_GazeInteraction_ReticleType_Invisible
+  commentId: F:TS.GazeInteraction.ReticleType.Invisible
+  fullName: TS.GazeInteraction.ReticleType.Invisible
+  nameWithType: ReticleType.Invisible
+- uid: TS.GazeInteraction.ReticleType.Visible
+  name: Visible
+  href: api/TS.GazeInteraction.ReticleType.html#TS_GazeInteraction_ReticleType_Visible
+  commentId: F:TS.GazeInteraction.ReticleType.Visible
+  fullName: TS.GazeInteraction.ReticleType.Visible
+  nameWithType: ReticleType.Visible

@@ -73,7 +73,7 @@
   
   <h1 id="TS_GazeInteraction_GazeInteractable" data-uid="TS.GazeInteraction.GazeInteractable" class="text-break">Class GazeInteractable
   </h1>
-  <div class="markdown level0 summary"><p>Component applied to GameObjects that can be interacted with using the gaze.</p>
+  <div class="markdown level0 summary"><p>Represents an interactable object that responds to gaze-based interactions.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -215,7 +215,8 @@
   
   <a id="TS_GazeInteraction_GazeInteractable_IsActivable_" data-uid="TS.GazeInteraction.GazeInteractable.IsActivable*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_IsActivable" data-uid="TS.GazeInteraction.GazeInteractable.IsActivable">IsActivable</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the interactable is activable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -240,7 +241,8 @@
   
   <a id="TS_GazeInteraction_GazeInteractable_IsActivated_" data-uid="TS.GazeInteraction.GazeInteractable.IsActivated*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_IsActivated" data-uid="TS.GazeInteraction.GazeInteractable.IsActivated">IsActivated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the interactable is currenlty activated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -265,7 +267,8 @@
   
   <a id="TS_GazeInteraction_GazeInteractable_IsEnabled_" data-uid="TS.GazeInteraction.GazeInteractable.IsEnabled*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_IsEnabled" data-uid="TS.GazeInteraction.GazeInteractable.IsEnabled">IsEnabled</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the interactable is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,7 +295,7 @@
   
   <a id="TS_GazeInteraction_GazeInteractable_Activate_" data-uid="TS.GazeInteraction.GazeInteractable.Activate*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_Activate" data-uid="TS.GazeInteraction.GazeInteractable.Activate">Activate()</h4>
-  <div class="markdown level1 summary"><p>Invokes the Activated events.</p>
+  <div class="markdown level1 summary"><p>Activates the interactable and invokes the activated event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -303,7 +306,7 @@
   
   <a id="TS_GazeInteraction_GazeInteractable_Enable_" data-uid="TS.GazeInteraction.GazeInteractable.Enable*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_Enable_System_Boolean_" data-uid="TS.GazeInteraction.GazeInteractable.Enable(System.Boolean)">Enable(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Toggles the GameObject.</p>
+  <div class="markdown level1 summary"><p>Enables or disables the interactable game object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -323,7 +326,8 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">enable</span></td>
-        <td></td>
+        <td><p>True to enable, false to disable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -331,8 +335,7 @@
   
   <a id="TS_GazeInteraction_GazeInteractable_GazeEnter_" data-uid="TS.GazeInteraction.GazeInteractable.GazeEnter*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_GazeEnter_TS_GazeInteraction_GazeInteractor_Vector3_" data-uid="TS.GazeInteraction.GazeInteractable.GazeEnter(TS.GazeInteraction.GazeInteractor,Vector3)">GazeEnter(GazeInteractor, Vector3)</h4>
-  <div class="markdown level1 summary"><p>Called by the GazeInteractor when the gaze enters this Interactable.
-Invokes the Enter events.</p>
+  <div class="markdown level1 summary"><p>Invokes the gaze enter event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -365,8 +368,7 @@ Invokes the Enter events.</p>
   
   <a id="TS_GazeInteraction_GazeInteractable_GazeExit_" data-uid="TS.GazeInteraction.GazeInteractable.GazeExit*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_GazeExit_TS_GazeInteraction_GazeInteractor_" data-uid="TS.GazeInteraction.GazeInteractable.GazeExit(TS.GazeInteraction.GazeInteractor)">GazeExit(GazeInteractor)</h4>
-  <div class="markdown level1 summary"><p>Called by the GazeInteractor when the gaze exits this Interactable.
-Invokes the Exit events.</p>
+  <div class="markdown level1 summary"><p>Invokes the gaze exit event after the _exitDelay duration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -394,8 +396,7 @@ Invokes the Exit events.</p>
   
   <a id="TS_GazeInteraction_GazeInteractable_GazeStay_" data-uid="TS.GazeInteraction.GazeInteractable.GazeStay*"></a>
   <h4 id="TS_GazeInteraction_GazeInteractable_GazeStay_TS_GazeInteraction_GazeInteractor_Vector3_" data-uid="TS.GazeInteraction.GazeInteractable.GazeStay(TS.GazeInteraction.GazeInteractor,Vector3)">GazeStay(GazeInteractor, Vector3)</h4>
-  <div class="markdown level1 summary"><p>Called by the GazeInteractor while the gaze stays on top of this Interactable.
-Invokes the Stay events.</p>
+  <div class="markdown level1 summary"><p>Invokes the gaze stay event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -429,7 +430,8 @@ Invokes the Stay events.</p>
   
   
   <h4 id="TS_GazeInteraction_GazeInteractable_Activated" data-uid="TS.GazeInteraction.GazeInteractable.Activated">Activated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event triggered when the interactable is activated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -453,7 +455,8 @@ Invokes the Stay events.</p>
   
   
   <h4 id="TS_GazeInteraction_GazeInteractable_Enter" data-uid="TS.GazeInteraction.GazeInteractable.Enter">Enter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event triggered when the gaze enters the interactable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -477,7 +480,8 @@ Invokes the Stay events.</p>
   
   
   <h4 id="TS_GazeInteraction_GazeInteractable_Exit" data-uid="TS.GazeInteraction.GazeInteractable.Exit">Exit</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event triggered when the gaze exits the interactable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -501,7 +505,8 @@ Invokes the Stay events.</p>
   
   
   <h4 id="TS_GazeInteraction_GazeInteractable_Stay" data-uid="TS.GazeInteraction.GazeInteractable.Stay">Stay</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event triggered while the gaze remains on the interactable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
