@@ -5,7 +5,7 @@
                 {
                     "src": "../",
                     "files": [
-                        "**/Assembly-CSharp.csproj"
+                        "**/*.csproj"
                     ]
                 }
             ],
