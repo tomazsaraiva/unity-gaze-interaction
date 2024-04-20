@@ -54,7 +54,7 @@ namespace TS.GazeInteraction
         /// </summary>
         public event OnExit Exit;
 
-        // <summary>
+        /// <summary>
         /// Delegate for handling the activation event.
         /// </summary>
         /// <param name="interactable">The interactable object.</param>
