@@ -1,273 +1,318 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GazeReticle
-   | Gaze Interaction System </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GazeReticle
-   | Gaze Interaction System ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class GazeReticle |  |  </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GazeReticle |  |  ">
+      
+      <meta name="description" content="Visual representation of the point of interaction.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/tomazsaraiva/unity-gaze-interaction/new/master/apiSpec/new?filename=TS_GazeInteraction_GazeReticle.md&amp;value=---%0Auid%3A%20TS.GazeInteraction.GazeReticle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="TS.GazeInteraction.GazeReticle">
-  
-  
-  <h1 id="TS_GazeInteraction_GazeReticle" data-uid="TS.GazeInteraction.GazeReticle" class="text-break">Class GazeReticle
-  </h1>
-  <div class="markdown level0 summary"><p>Visual representation of the point of interaction.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">GazeReticle</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="TS.GazeInteraction.html">TS.GazeInteraction</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="TS_GazeInteraction_GazeReticle_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GazeReticle : MonoBehaviour</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="TS_GazeInteraction_GazeReticle_Enable_" data-uid="TS.GazeInteraction.GazeReticle.Enable*"></a>
-  <h4 id="TS_GazeInteraction_GazeReticle_Enable_System_Boolean_" data-uid="TS.GazeInteraction.GazeReticle.Enable(System.Boolean)">Enable(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Toggles the visibility of the reticle GameObject.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Enable(bool enable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">enable</span></td>
-        <td><p>Whether to enable or disable the reticle.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="TS_GazeInteraction_GazeReticle_SetInteractor_" data-uid="TS.GazeInteraction.GazeReticle.SetInteractor*"></a>
-  <h4 id="TS_GazeInteraction_GazeReticle_SetInteractor_TS_GazeInteraction_GazeInteractor_" data-uid="TS.GazeInteraction.GazeReticle.SetInteractor(TS.GazeInteraction.GazeInteractor)">SetInteractor(GazeInteractor)</h4>
-  <div class="markdown level1 summary"><p>Assigns the GazeInteractor using this reticle.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetInteractor(GazeInteractor interactor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a></td>
-        <td><span class="parametername">interactor</span></td>
-        <td><p>The GazeInteractor to associate with this reticle.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="TS_GazeInteraction_GazeReticle_SetProgress_" data-uid="TS.GazeInteraction.GazeReticle.SetProgress*"></a>
-  <h4 id="TS_GazeInteraction_GazeReticle_SetProgress_System_Single_" data-uid="TS.GazeInteraction.GazeReticle.SetProgress(System.Single)">SetProgress(Single)</h4>
-  <div class="markdown level1 summary"><p>Updates the progress visual indicator.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetProgress(float progress)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">progress</span></td>
-        <td><p>The progress value (0 to 1) to display.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="TS_GazeInteraction_GazeReticle_SetTarget_" data-uid="TS.GazeInteraction.GazeReticle.SetTarget*"></a>
-  <h4 id="TS_GazeInteraction_GazeReticle_SetTarget_RaycastHit_" data-uid="TS.GazeInteraction.GazeReticle.SetTarget(RaycastHit)">SetTarget(RaycastHit)</h4>
-  <div class="markdown level1 summary"><p>Assigns the current hit point to adjust the reticle position and rotation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetTarget(RaycastHit hit)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">RaycastHit</span></td>
-        <td><span class="parametername">hit</span></td>
-        <td><p>The RaycastHit containing information about the hit point.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="TS_GazeInteraction_GazeReticle_SetType_" data-uid="TS.GazeInteraction.GazeReticle.SetType*"></a>
-  <h4 id="TS_GazeInteraction_GazeReticle_SetType_TS_GazeInteraction_ReticleType_" data-uid="TS.GazeInteraction.GazeReticle.SetType(TS.GazeInteraction.ReticleType)">SetType(ReticleType)</h4>
-  <div class="markdown level1 summary"><p>Sets the type of reticle (visible or invisible).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetType(ReticleType type)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TS.GazeInteraction.ReticleType.html">ReticleType</a></td>
-        <td><span class="parametername">type</span></td>
-        <td><p>The desired reticle type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="TS.GazeInteraction.GazeReticle">
+
+
+
+  <h1 id="TS_GazeInteraction_GazeReticle" data-uid="TS.GazeInteraction.GazeReticle" class="text-break">
+Class GazeReticle  <a class="header-action link-secondary" title="View source" href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Assets/GazeInteraction/Scripts/GazeReticle.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TS.html">TS</a>.<a class="xref" href="TS.GazeInteraction.html">GazeInteraction</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Visual representation of the point of interaction.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GazeReticle : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GazeReticle</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TS_GazeInteraction_GazeReticle_Enable_" data-uid="TS.GazeInteraction.GazeReticle.Enable*"></a>
+
+  <h3 id="TS_GazeInteraction_GazeReticle_Enable_System_Boolean_" data-uid="TS.GazeInteraction.GazeReticle.Enable(System.Boolean)">
+  Enable(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Assets/GazeInteraction/Scripts/GazeReticle.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Toggles the visibility of the reticle GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enable(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to enable or disable the reticle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TS_GazeInteraction_GazeReticle_SetInteractor_" data-uid="TS.GazeInteraction.GazeReticle.SetInteractor*"></a>
+
+  <h3 id="TS_GazeInteraction_GazeReticle_SetInteractor_TS_GazeInteraction_GazeInteractor_" data-uid="TS.GazeInteraction.GazeReticle.SetInteractor(TS.GazeInteraction.GazeInteractor)">
+  SetInteractor(GazeInteractor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Assets/GazeInteraction/Scripts/GazeReticle.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assigns the GazeInteractor using this reticle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInteractor(GazeInteractor interactor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interactor</code> <a class="xref" href="TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a></dt>
+    <dd><p>The GazeInteractor to associate with this reticle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TS_GazeInteraction_GazeReticle_SetProgress_" data-uid="TS.GazeInteraction.GazeReticle.SetProgress*"></a>
+
+  <h3 id="TS_GazeInteraction_GazeReticle_SetProgress_System_Single_" data-uid="TS.GazeInteraction.GazeReticle.SetProgress(System.Single)">
+  SetProgress(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Assets/GazeInteraction/Scripts/GazeReticle.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the progress visual indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProgress(float progress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The progress value (0 to 1) to display.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TS_GazeInteraction_GazeReticle_SetTarget_" data-uid="TS.GazeInteraction.GazeReticle.SetTarget*"></a>
+
+  <h3 id="TS_GazeInteraction_GazeReticle_SetTarget_RaycastHit_" data-uid="TS.GazeInteraction.GazeReticle.SetTarget(RaycastHit)">
+  SetTarget(RaycastHit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Assets/GazeInteraction/Scripts/GazeReticle.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assigns the current hit point to adjust the reticle position and rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTarget(RaycastHit hit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hit</code> <span class="xref">RaycastHit</span></dt>
+    <dd><p>The RaycastHit containing information about the hit point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TS_GazeInteraction_GazeReticle_SetType_" data-uid="TS.GazeInteraction.GazeReticle.SetType*"></a>
+
+  <h3 id="TS_GazeInteraction_GazeReticle_SetType_TS_GazeInteraction_ReticleType_" data-uid="TS.GazeInteraction.GazeReticle.SetType(TS.GazeInteraction.ReticleType)">
+  SetType(ReticleType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Assets/GazeInteraction/Scripts/GazeReticle.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the type of reticle (visible or invisible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetType(ReticleType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="TS.GazeInteraction.ReticleType.html">ReticleType</a></dt>
+    <dd><p>The desired reticle type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/tomazsaraiva" target="_blank">tomazsaraiva</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

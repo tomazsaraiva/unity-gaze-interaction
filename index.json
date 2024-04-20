@@ -1,0 +1,162 @@
+{
+  "api/Global.BasicRigidBodyPush.html": {
+    "href": "api/Global.BasicRigidBodyPush.html",
+    "title": "Class BasicRigidBodyPush | |",
+    "keywords": "Class BasicRigidBodyPush Namespace Global public class BasicRigidBodyPush : MonoBehaviour Inheritance object BasicRigidBodyPush Fields canPush public bool canPush Field Value bool pushLayers public LayerMask pushLayers Field Value LayerMask strength public float strength Field Value float"
+  },
+  "api/Global.MobileDisableAutoSwitchControls.html": {
+    "href": "api/Global.MobileDisableAutoSwitchControls.html",
+    "title": "Class MobileDisableAutoSwitchControls | |",
+    "keywords": "Class MobileDisableAutoSwitchControls Namespace Global public class MobileDisableAutoSwitchControls : MonoBehaviour Inheritance object MobileDisableAutoSwitchControls"
+  },
+  "api/Global.Readme.Section.html": {
+    "href": "api/Global.Readme.Section.html",
+    "title": "Class Readme.Section | |",
+    "keywords": "Class Readme.Section Namespace Global [Serializable] public class Readme.Section Inheritance object Readme.Section Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields heading public string heading Field Value string linkText public string linkText Field Value string text public string text Field Value string url public string url Field Value string"
+  },
+  "api/Global.Readme.html": {
+    "href": "api/Global.Readme.html",
+    "title": "Class Readme | |",
+    "keywords": "Class Readme Namespace Global public class Readme : ScriptableObject Inheritance object Readme Fields icon public Texture2D icon Field Value Texture2D loadedLayout public bool loadedLayout Field Value bool sections public Readme.Section[] sections Field Value Section[] title public string title Field Value string"
+  },
+  "api/Global.ReadmeEditor.html": {
+    "href": "api/Global.ReadmeEditor.html",
+    "title": "Class ReadmeEditor | |",
+    "keywords": "Class ReadmeEditor Namespace Global public class ReadmeEditor : Editor Inheritance object ReadmeEditor Methods OnHeaderGUI() protected override void OnHeaderGUI() OnInspectorGUI() public override void OnInspectorGUI()"
+  },
+  "api/Global.UIVirtualButton.html": {
+    "href": "api/Global.UIVirtualButton.html",
+    "title": "Class UIVirtualButton | |",
+    "keywords": "Class UIVirtualButton Namespace Global public class UIVirtualButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler Inheritance object UIVirtualButton Implements IPointerDownHandler IPointerUpHandler IPointerClickHandler Fields buttonClickOutputEvent public UnityEvent buttonClickOutputEvent Field Value UnityEvent buttonStateOutputEvent public UnityEvent<bool> buttonStateOutputEvent Field Value UnityEvent<bool> Methods OnPointerClick(PointerEventData) public void OnPointerClick(PointerEventData eventData) Parameters eventData PointerEventData OnPointerDown(PointerEventData) public void OnPointerDown(PointerEventData eventData) Parameters eventData PointerEventData OnPointerUp(PointerEventData) public void OnPointerUp(PointerEventData eventData) Parameters eventData PointerEventData"
+  },
+  "api/Global.UIVirtualJoystick.html": {
+    "href": "api/Global.UIVirtualJoystick.html",
+    "title": "Class UIVirtualJoystick | |",
+    "keywords": "Class UIVirtualJoystick Namespace Global public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler Inheritance object UIVirtualJoystick Implements IPointerDownHandler IDragHandler IPointerUpHandler Fields containerRect public RectTransform containerRect Field Value RectTransform handleRect public RectTransform handleRect Field Value RectTransform invertXOutputValue public bool invertXOutputValue Field Value bool invertYOutputValue public bool invertYOutputValue Field Value bool joystickOutputEvent public UnityEvent<Vector2> joystickOutputEvent Field Value UnityEvent<Vector2> joystickRange public float joystickRange Field Value float magnitudeMultiplier public float magnitudeMultiplier Field Value float Methods OnDrag(PointerEventData) public void OnDrag(PointerEventData eventData) Parameters eventData PointerEventData OnPointerDown(PointerEventData) public void OnPointerDown(PointerEventData eventData) Parameters eventData PointerEventData OnPointerUp(PointerEventData) public void OnPointerUp(PointerEventData eventData) Parameters eventData PointerEventData"
+  },
+  "api/Global.UIVirtualTouchZone.html": {
+    "href": "api/Global.UIVirtualTouchZone.html",
+    "title": "Class UIVirtualTouchZone | |",
+    "keywords": "Class UIVirtualTouchZone Namespace Global public class UIVirtualTouchZone : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler Inheritance object UIVirtualTouchZone Implements IPointerDownHandler IDragHandler IPointerUpHandler Fields clampToMagnitude public bool clampToMagnitude Field Value bool containerRect public RectTransform containerRect Field Value RectTransform handleRect public RectTransform handleRect Field Value RectTransform invertXOutputValue public bool invertXOutputValue Field Value bool invertYOutputValue public bool invertYOutputValue Field Value bool magnitudeMultiplier public float magnitudeMultiplier Field Value float touchZoneOutputEvent public UnityEvent<Vector2> touchZoneOutputEvent Field Value UnityEvent<Vector2> Methods OnDrag(PointerEventData) public void OnDrag(PointerEventData eventData) Parameters eventData PointerEventData OnPointerDown(PointerEventData) public void OnPointerDown(PointerEventData eventData) Parameters eventData PointerEventData OnPointerUp(PointerEventData) public void OnPointerUp(PointerEventData eventData) Parameters eventData PointerEventData"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace | |",
+    "keywords": "Namespace Classes BasicRigidBodyPush MobileDisableAutoSwitchControls Readme Readme.Section ReadmeEditor UIVirtualButton UIVirtualJoystick UIVirtualTouchZone"
+  },
+  "api/StarterAssets.FirstPersonController.html": {
+    "href": "api/StarterAssets.FirstPersonController.html",
+    "title": "Class FirstPersonController | |",
+    "keywords": "Class FirstPersonController Namespace StarterAssets public class FirstPersonController : MonoBehaviour Inheritance object FirstPersonController Fields BottomClamp public float BottomClamp Field Value float CinemachineCameraTarget public GameObject CinemachineCameraTarget Field Value GameObject FallTimeout public float FallTimeout Field Value float Gravity public float Gravity Field Value float GroundLayers public LayerMask GroundLayers Field Value LayerMask Grounded public bool Grounded Field Value bool GroundedOffset public float GroundedOffset Field Value float GroundedRadius public float GroundedRadius Field Value float JumpHeight public float JumpHeight Field Value float JumpTimeout public float JumpTimeout Field Value float MoveSpeed public float MoveSpeed Field Value float RotationSpeed public float RotationSpeed Field Value float SpeedChangeRate public float SpeedChangeRate Field Value float SprintSpeed public float SprintSpeed Field Value float TopClamp public float TopClamp Field Value float"
+  },
+  "api/StarterAssets.PackageChecker.PackageEntry.html": {
+    "href": "api/StarterAssets.PackageChecker.PackageEntry.html",
+    "title": "Class PackageChecker.PackageEntry | |",
+    "keywords": "Class PackageChecker.PackageEntry Namespace StarterAssets public class PackageChecker.PackageEntry Inheritance object PackageChecker.PackageEntry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields name public string name Field Value string version public string version Field Value string"
+  },
+  "api/StarterAssets.PackageChecker.html": {
+    "href": "api/StarterAssets.PackageChecker.html",
+    "title": "Class PackageChecker | |",
+    "keywords": "Class PackageChecker Namespace StarterAssets public static class PackageChecker Inheritance object PackageChecker Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields PackageCheckerScriptingDefine public static readonly string PackageCheckerScriptingDefine Field Value string Methods CompareVersion(string, string) public static int CompareVersion(string latestVerifiedVersion, string projectVersion) Parameters latestVerifiedVersion string projectVersion string Returns int"
+  },
+  "api/StarterAssets.ScriptingDefineUtils.html": {
+    "href": "api/StarterAssets.ScriptingDefineUtils.html",
+    "title": "Class ScriptingDefineUtils | |",
+    "keywords": "Class ScriptingDefineUtils Namespace StarterAssets public static class ScriptingDefineUtils Inheritance object ScriptingDefineUtils Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CheckScriptingDefine(string) public static bool CheckScriptingDefine(string scriptingDefine) Parameters scriptingDefine string Returns bool RemoveScriptingDefine(string) public static void RemoveScriptingDefine(string scriptingDefine) Parameters scriptingDefine string SetScriptingDefine(string) public static void SetScriptingDefine(string scriptingDefine) Parameters scriptingDefine string"
+  },
+  "api/StarterAssets.StarterAssetsDeployMenu.html": {
+    "href": "api/StarterAssets.StarterAssetsDeployMenu.html",
+    "title": "Class StarterAssetsDeployMenu | |",
+    "keywords": "Class StarterAssetsDeployMenu Namespace StarterAssets public class StarterAssetsDeployMenu : ScriptableObject, ScriptableObject Inheritance object StarterAssetsDeployMenu Implements ScriptableObject Fields MenuRoot public const string MenuRoot = \"Tools/Starter Assets\" Field Value string Properties StarterAssetsInstallPath Get the relative root path of the StarterAssets install - works even if user has moved it within Assets, so long as user does not mess with the internal hierarchy of the StarterAssets folder public static string StarterAssetsInstallPath { get; } Property Value string"
+  },
+  "api/StarterAssets.StarterAssetsInputs.html": {
+    "href": "api/StarterAssets.StarterAssetsInputs.html",
+    "title": "Class StarterAssetsInputs | |",
+    "keywords": "Class StarterAssetsInputs Namespace StarterAssets public class StarterAssetsInputs : MonoBehaviour Inheritance object StarterAssetsInputs Fields analogMovement public bool analogMovement Field Value bool cursorInputForLook public bool cursorInputForLook Field Value bool cursorLocked public bool cursorLocked Field Value bool jump public bool jump Field Value bool look public Vector2 look Field Value Vector2 move public Vector2 move Field Value Vector2 sprint public bool sprint Field Value bool Methods JumpInput(bool) public void JumpInput(bool newJumpState) Parameters newJumpState bool LookInput(Vector2) public void LookInput(Vector2 newLookDirection) Parameters newLookDirection Vector2 MoveInput(Vector2) public void MoveInput(Vector2 newMoveDirection) Parameters newMoveDirection Vector2 SprintInput(bool) public void SprintInput(bool newSprintState) Parameters newSprintState bool"
+  },
+  "api/StarterAssets.UICanvasControllerInput.html": {
+    "href": "api/StarterAssets.UICanvasControllerInput.html",
+    "title": "Class UICanvasControllerInput | |",
+    "keywords": "Class UICanvasControllerInput Namespace StarterAssets public class UICanvasControllerInput : MonoBehaviour Inheritance object UICanvasControllerInput Fields starterAssetsInputs public StarterAssetsInputs starterAssetsInputs Field Value StarterAssetsInputs Methods VirtualJumpInput(bool) public void VirtualJumpInput(bool virtualJumpState) Parameters virtualJumpState bool VirtualLookInput(Vector2) public void VirtualLookInput(Vector2 virtualLookDirection) Parameters virtualLookDirection Vector2 VirtualMoveInput(Vector2) public void VirtualMoveInput(Vector2 virtualMoveDirection) Parameters virtualMoveDirection Vector2 VirtualSprintInput(bool) public void VirtualSprintInput(bool virtualSprintState) Parameters virtualSprintState bool"
+  },
+  "api/StarterAssets.html": {
+    "href": "api/StarterAssets.html",
+    "title": "Namespace StarterAssets | |",
+    "keywords": "Namespace StarterAssets Classes FirstPersonController PackageChecker PackageChecker.PackageEntry ScriptingDefineUtils StarterAssetsDeployMenu StarterAssetsInputs UICanvasControllerInput"
+  },
+  "api/TS.GazeInteraction.Demo.GazeInteractableDemo.html": {
+    "href": "api/TS.GazeInteraction.Demo.GazeInteractableDemo.html",
+    "title": "Class GazeInteractableDemo | |",
+    "keywords": "Class GazeInteractableDemo Namespace TS.GazeInteraction.Demo public class GazeInteractableDemo : MonoBehaviour Inheritance object GazeInteractableDemo Methods Enable() public void Enable() Reset() public void Reset()"
+  },
+  "api/TS.GazeInteraction.Demo.html": {
+    "href": "api/TS.GazeInteraction.Demo.html",
+    "title": "Namespace TS.GazeInteraction.Demo | |",
+    "keywords": "Namespace TS.GazeInteraction.Demo Classes GazeInteractableDemo"
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnActivated.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnActivated.html",
+    "title": "Delegate GazeInteractable.OnActivated | |",
+    "keywords": "Delegate GazeInteractable.OnActivated Namespace TS.GazeInteraction Delegate for handling the activation event. public delegate void GazeInteractable.OnActivated(GazeInteractable interactable) Parameters interactable GazeInteractable The interactable object."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnEnter.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnEnter.html",
+    "title": "Delegate GazeInteractable.OnEnter | |",
+    "keywords": "Delegate GazeInteractable.OnEnter Namespace TS.GazeInteraction Delegate for handling the gaze enter event. public delegate void GazeInteractable.OnEnter(GazeInteractable interactable, GazeInteractor interactor, Vector3 point) Parameters interactable GazeInteractable The interactable object. interactor GazeInteractor The gaze interactor. point Vector3 The point where the gaze entered."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnExit.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnExit.html",
+    "title": "Delegate GazeInteractable.OnExit | |",
+    "keywords": "Delegate GazeInteractable.OnExit Namespace TS.GazeInteraction Delegate for handling the gaze exit event. public delegate void GazeInteractable.OnExit(GazeInteractable interactable, GazeInteractor interactor) Parameters interactable GazeInteractable The interactable object. interactor GazeInteractor The gaze interactor."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnStay.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnStay.html",
+    "title": "Delegate GazeInteractable.OnStay | |",
+    "keywords": "Delegate GazeInteractable.OnStay Namespace TS.GazeInteraction Delegate for handling the gaze stay event. public delegate void GazeInteractable.OnStay(GazeInteractable interactable, GazeInteractor interactor, Vector3 point) Parameters interactable GazeInteractable The interactable object. interactor GazeInteractor The gaze interactor. point Vector3 The current gaze point."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.html",
+    "title": "Class GazeInteractable | |",
+    "keywords": "Class GazeInteractable Namespace TS.GazeInteraction Represents an interactable object that responds to gaze-based interactions. public class GazeInteractable : MonoBehaviour Inheritance object GazeInteractable Fields OnGazeActivated public UnityEvent OnGazeActivated Field Value UnityEvent OnGazeEnter public UnityEvent OnGazeEnter Field Value UnityEvent OnGazeExit public UnityEvent OnGazeExit Field Value UnityEvent OnGazeStay public UnityEvent OnGazeStay Field Value UnityEvent OnGazeToggle public UnityEvent<bool> OnGazeToggle Field Value UnityEvent<bool> Properties IsActivable Indicates whether the interactable is activable. public bool IsActivable { get; } Property Value bool IsActivated Indicates whether the interactable is currenlty activated. public bool IsActivated { get; } Property Value bool IsEnabled Indicates whether the interactable is enabled. public bool IsEnabled { get; set; } Property Value bool Methods Activate() Activates the interactable and invokes the activated event. public void Activate() Enable(bool) Enables or disables the interactable game object. public void Enable(bool enable) Parameters enable bool True to enable, false to disable. GazeEnter(GazeInteractor, Vector3) Invokes the gaze enter event. public void GazeEnter(GazeInteractor interactor, Vector3 point) Parameters interactor GazeInteractor point Vector3 GazeExit(GazeInteractor) Invokes the gaze exit event after the _exitDelay duration. public void GazeExit(GazeInteractor interactor) Parameters interactor GazeInteractor GazeStay(GazeInteractor, Vector3) Invokes the gaze stay event. public void GazeStay(GazeInteractor interactor, Vector3 point) Parameters interactor GazeInteractor point Vector3 Events Activated Event triggered when the interactable is activated. public event GazeInteractable.OnActivated Activated Event Type GazeInteractable.OnActivated Enter Event triggered when the gaze enters the interactable. public event GazeInteractable.OnEnter Enter Event Type GazeInteractable.OnEnter Exit Event triggered when the gaze exits the interactable. public event GazeInteractable.OnExit Exit Event Type GazeInteractable.OnExit Stay Event triggered while the gaze remains on the interactable. public event GazeInteractable.OnStay Stay Event Type GazeInteractable.OnStay"
+  },
+  "api/TS.GazeInteraction.GazeInteractor.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractor.html",
+    "title": "Class GazeInteractor | |",
+    "keywords": "Class GazeInteractor Namespace TS.GazeInteraction Manages gaze-based interactions with interactables. public class GazeInteractor : MonoBehaviour Inheritance object GazeInteractor"
+  },
+  "api/TS.GazeInteraction.GazeReticle.html": {
+    "href": "api/TS.GazeInteraction.GazeReticle.html",
+    "title": "Class GazeReticle | |",
+    "keywords": "Class GazeReticle Namespace TS.GazeInteraction Visual representation of the point of interaction. public class GazeReticle : MonoBehaviour Inheritance object GazeReticle Methods Enable(bool) Toggles the visibility of the reticle GameObject. public void Enable(bool enable) Parameters enable bool Whether to enable or disable the reticle. SetInteractor(GazeInteractor) Assigns the GazeInteractor using this reticle. public void SetInteractor(GazeInteractor interactor) Parameters interactor GazeInteractor The GazeInteractor to associate with this reticle. SetProgress(float) Updates the progress visual indicator. public void SetProgress(float progress) Parameters progress float The progress value (0 to 1) to display. SetTarget(RaycastHit) Assigns the current hit point to adjust the reticle position and rotation. public void SetTarget(RaycastHit hit) Parameters hit RaycastHit The RaycastHit containing information about the hit point. SetType(ReticleType) Sets the type of reticle (visible or invisible). public void SetType(ReticleType type) Parameters type ReticleType The desired reticle type."
+  },
+  "api/TS.GazeInteraction.ResourcesManager.html": {
+    "href": "api/TS.GazeInteraction.ResourcesManager.html",
+    "title": "Class ResourcesManager | |",
+    "keywords": "Class ResourcesManager Namespace TS.GazeInteraction Loads assets from the Resources directory. public class ResourcesManager : MonoBehaviour Inheritance object ResourcesManager Fields FILE_PREFAB_RETICLE public const string FILE_PREFAB_RETICLE = \"gaze_reticle\" Field Value string Methods GetPrefab(string) Loads and returns the asset specified in file from the Resources directory. public static GameObject GetPrefab(string file) Parameters file string Name of the asset to load. Use one of the constants. Returns GameObject Returns the loaded GameObject."
+  },
+  "api/TS.GazeInteraction.ReticleType.html": {
+    "href": "api/TS.GazeInteraction.ReticleType.html",
+    "title": "Enum ReticleType | |",
+    "keywords": "Enum ReticleType Namespace TS.GazeInteraction Types of reticles (visual feedback) for gaze interactions. public enum ReticleType Fields Default = 0 Visible only on detection. Invisible = 2 Always invisible. Visible = 1 Always visible."
+  },
+  "api/TS.GazeInteraction.html": {
+    "href": "api/TS.GazeInteraction.html",
+    "title": "Namespace TS.GazeInteraction | |",
+    "keywords": "Namespace TS.GazeInteraction Classes GazeInteractable Represents an interactable object that responds to gaze-based interactions. GazeInteractor Manages gaze-based interactions with interactables. GazeReticle Visual representation of the point of interaction. ResourcesManager Loads assets from the Resources directory. Enums ReticleType Types of reticles (visual feedback) for gaze interactions. Delegates GazeInteractable.OnActivated Delegate for handling the activation event. GazeInteractable.OnEnter Delegate for handling the gaze enter event. GazeInteractable.OnExit Delegate for handling the gaze exit event. GazeInteractable.OnStay Delegate for handling the gaze stay event."
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "| |",
+    "keywords": "This is the documentation for the Scripting APIs of this package."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| |",
+    "keywords": "This page redirects to the manual."
+  },
+  "manual/index.html": {
+    "href": "manual/index.html",
+    "title": "unity-gaze-interaction | |",
+    "keywords": "unity-gaze-interaction A Gaze Interaction System for Unity VR"
+  }
+}

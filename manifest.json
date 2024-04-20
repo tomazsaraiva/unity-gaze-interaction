@@ -1,21 +1,216 @@
 {
   "sitemap": {
-    "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction/"
+    "baseUrl": "http://www.tomazsaraiva.com/unity-gaze-interaction/"
   },
-  "homepages": [],
-  "source_base_path": "D:/a/unity-gaze-interaction/unity-gaze-interaction/Documentation",
+  "source_base_path": "/home/runner/work/unity-gaze-interaction/unity-gaze-interaction/Documentation~",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.BasicRigidBodyPush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.BasicRigidBodyPush.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.MobileDisableAutoSwitchControls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.MobileDisableAutoSwitchControls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Readme.Section.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Readme.Section.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Readme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Readme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ReadmeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ReadmeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.UIVirtualButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UIVirtualButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.UIVirtualJoystick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UIVirtualJoystick.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.UIVirtualTouchZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UIVirtualTouchZone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.FirstPersonController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.FirstPersonController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.PackageChecker.PackageEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.PackageChecker.PackageEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.PackageChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.PackageChecker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.ScriptingDefineUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.ScriptingDefineUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.StarterAssetsDeployMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.StarterAssetsDeployMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.StarterAssetsInputs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.StarterAssetsInputs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.UICanvasControllerInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.UICanvasControllerInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.Demo.GazeInteractableDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.Demo.GazeInteractableDemo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.Demo.html"
+        }
+      },
+      "version": ""
+    },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnActivated.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnActivated.html",
-          "hash": "UhVl4qubV2DGGrYPa/sEJ+sQwBkh7uZSiGIcye8gwTM="
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnActivated.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -23,11 +218,9 @@
       "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnEnter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnEnter.html",
-          "hash": "yTZkC/6fFcAnGcOtetMh4LHpDnikSInZVRqdekbxQ6c="
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnEnter.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -35,11 +228,9 @@
       "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnExit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnExit.html",
-          "hash": "Rc4ejhqPV/8j9+LOGx4D+jFErmUvLQNq6XEB5i8zkpk="
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnExit.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -47,11 +238,9 @@
       "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnStay.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnStay.html",
-          "hash": "QSfx8kmfCTyKg0q8jWwX4vOucH6iKD/Ok31LIwJzKYA="
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnStay.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -59,11 +248,9 @@
       "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeInteractable.html",
-          "hash": "wlaYCC+xAotRiVeNpPQlF49Bl7JrWJtI6V7ZZ5e3zsE="
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -71,11 +258,9 @@
       "source_relative_path": "api/TS.GazeInteraction.GazeInteractor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeInteractor.html",
-          "hash": "8Te1JFIp8ZQ1X1clX0bOYfSlSDi/ayGSwM1xmkosVPA="
+          "relative_path": "api/TS.GazeInteraction.GazeInteractor.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -83,11 +268,9 @@
       "source_relative_path": "api/TS.GazeInteraction.GazeReticle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.GazeReticle.html",
-          "hash": "JsS2F1M6yS5uWM5fFOQ8ALrJBB1j6cT58MmkYgwJlgc="
+          "relative_path": "api/TS.GazeInteraction.GazeReticle.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -95,11 +278,9 @@
       "source_relative_path": "api/TS.GazeInteraction.ResourcesManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.ResourcesManager.html",
-          "hash": "CzFbfxUBUSuQ2F/RW1jTXoPfkT1nROKyeYnanS9legQ="
+          "relative_path": "api/TS.GazeInteraction.ResourcesManager.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -107,11 +288,9 @@
       "source_relative_path": "api/TS.GazeInteraction.ReticleType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.ReticleType.html",
-          "hash": "Be1/cq7gqGibMI97Re4MuRo0RM0hvUm84prrEc/89Og="
+          "relative_path": "api/TS.GazeInteraction.ReticleType.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -119,11 +298,9 @@
       "source_relative_path": "api/TS.GazeInteraction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TS.GazeInteraction.html",
-          "hash": "8YtSKsXNelsqGhZdUXbuagZ2iGPJnEGmCELjGXfHhpg="
+          "relative_path": "api/TS.GazeInteraction.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -131,129 +308,58 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "zmlKAbLfomxpmueryF2jiWTt9J+JUDdHMOD8w7uQW1w="
+          "relative_path": "api/index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "qqNyhJ5opp5/bV5uB5YF+QoCVbHFtx60NMacNxj2Zh0="
+          "relative_path": "api/toc.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "images/unity_gaze_interactable.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/unity_gaze_interactable.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/unity_gaze_interactor.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/unity_gaze_interactor.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "p2iTVduzgwPUp1yJkFXB1f6i+k1PO5F5A8hGXRNhlmo="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "wri3gQvFZvcTjhmqTsJtJaokPCcF7d3dv1ZZM5XTcBg="
+          "relative_path": "toc.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

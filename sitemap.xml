@@ -1,74 +1,194 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/index.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.BasicRigidBodyPush.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.MobileDisableAutoSwitchControls.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnEnter.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.Readme.Section.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.Readme.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnStay.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.ReadmeEditor.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.UIVirtualButton.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractor.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.UIVirtualJoystick.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeReticle.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.UIVirtualTouchZone.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.ResourcesManager.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/Global.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.ReticleType.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.FirstPersonController.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.PackageChecker.PackageEntry.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tomazsaraiva.github.io/unity-gaze-interaction/index.html</loc>
-    <lastmod>2024-04-20T09:44:31+00:00</lastmod>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.PackageChecker.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.ScriptingDefineUtils.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.StarterAssetsDeployMenu.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.StarterAssetsInputs.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.UICanvasControllerInput.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/StarterAssets.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.Demo.GazeInteractableDemo.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.Demo.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnEnter.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnStay.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractor.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.GazeReticle.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.ResourcesManager.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.ReticleType.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/TS.GazeInteraction.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/api/index.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/index.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.tomazsaraiva.com/unity-gaze-interaction/manual/index.html</loc>
+    <lastmod>2024-04-20T02:55:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
