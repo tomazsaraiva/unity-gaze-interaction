@@ -9,9 +9,7 @@
                     ]
                 }
             ],
-            "dest": "api",
-            "disableDefaultFilter": true,
-            "filter": "filterConfig.yml"
+            "dest": "api"
         }
     ],
     "build": {
@@ -35,7 +33,7 @@
         "output": "_site",
         "template": [
             "default",
-            "unity"
+            "modern"
         ],
         "globalMetadata": {
             "_appName": "Gaze Interaction System",
