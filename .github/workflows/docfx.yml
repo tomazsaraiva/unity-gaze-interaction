@@ -1,51 +1,27 @@
-name: Example documentation
+name: docfx-unitypackage
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
 
 jobs:
-  # Build the documentation
-  build:
-    runs-on: windows-latest # Required by DocFX
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        # with:
-        #   submodules: true
-
-      - name: Install DocFX
-        run: choco install -y docfx
-
-      - name: Use README.md as index.md
-        run: cp README.md Documentation/index.md
+        uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Build
-        run: docfx Documentation/docfx.json
-
-      # Upload the generated documentation
-      - name: Upload site artifact
-        uses: actions/upload-artifact@v1
+        uses: CaseyHofland/docfx-unitypackage@v1
         with:
-          name: _site
-          path: _site # Must equals the 'build.dest' value on your docfx.json
-
-  # Deploy the generated documentation to the gh-pages branch
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        # with:
-        #   submodules: true
-
-      # Download the generated documentation
-      - name: Download site artifact
-        uses: actions/download-artifact@v1
-        with:
-          name: _site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
