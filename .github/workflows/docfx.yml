@@ -21,6 +21,9 @@ jobs:
       - name: Use README.md as index.md
         run: cp README.md Documentation/index.md
 
+      - name: Build
+        run: docfx Documentation/docfx.json
+
       # Upload the generated documentation
       - name: Upload site artifact
         uses: actions/upload-artifact@v1
