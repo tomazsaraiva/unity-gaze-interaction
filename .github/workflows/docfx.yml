@@ -1,54 +1,44 @@
-name: Generate documentation
-
+# Your GitHub workflow file under .github/workflows/
+# Trigger the action on push to main
 on:
-  push:
-    branches:
-      - main
-      
-  workflow_dispatch:
+    push:
+      branches:
+        - main
+  
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  actions: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  # Build the documentation
-  build:
-    runs-on: windows-latest # Required by DocFX
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        # with:
-        #   submodules: true
+    publish-docs:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Dotnet Setup
+          uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: 8.x
 
-      - name: Install DocFX
-        run: choco install -y docfx
+        - run: dotnet tool update -g docfx
+        - run: docfx <docfx-project-path>/docfx.json
 
-      - name: Build
-        run: docfx Documentation/docfx.json
-
-      # Upload the generated documentation
-      - name: Upload site artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: _site
-          path: _site # Must equals the 'build.dest' value on your docfx.json
-
-  # Deploy the generated documentation to the gh-pages branch
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        # with:
-        #   submodules: true
-
-      # Download the generated documentation
-      - name: Download site artifact
-        uses: actions/download-artifact@v1
-        with:
-          name: _site
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: _site
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact@v3
+          with:
+            # Upload entire repository
+            path: '<docfx-project-path>/_site'
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4
