@@ -3,9 +3,9 @@
         {
             "src": [
                 {
-                    "src": "./",
+                    "src": "../src",
                     "files": [
-                        "*.csproj"
+                        "**/*.csproj"
                     ]
                 }
             ],
@@ -40,6 +40,9 @@
             "_appTitle": "Gaze Interaction System",
             "_enableSearch": true,
             "pdf": true
+        },
+        "sitemap": {
+            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction"
         }
     }
 }
