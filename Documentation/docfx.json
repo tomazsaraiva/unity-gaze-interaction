@@ -3,7 +3,7 @@
         {
             "src": [
                 {
-                    "src": "Assets/GazeInteraction/",
+                    "src": "../Assets/GazeInteraction/",
                     "files": [
                         "**/*.cs"
                     ]
