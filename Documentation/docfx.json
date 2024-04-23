@@ -3,13 +3,14 @@
         {
             "src": [
                 {
-                    "src": "..",
+                    "src": "../Assets/GazeInteraction/",
                     "files": [
-                        "**/*.csproj"
+                        "**/*.cs"
                     ]
                 }
             ],
-            "dest": "api"
+            "dest": "api",
+            "allowCompilationErrors": true
         }
     ],
     "build": {
