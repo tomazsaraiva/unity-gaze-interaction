@@ -230,15 +230,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "wri3gQvFZvcTjhmqTsJtJaokPCcF7d3dv1ZZM5XTcBg="
+          "hash": "qHauA4ROZ1I/ZaP99MRVj838VjQDLAIJfmTHjU2a0q0="
         }
       },
       "is_incremental": false,
