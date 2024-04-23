@@ -4,6 +4,56 @@
     "title": "PLACEHOLDER | Gaze Interaction System",
     "keywords": "PLACEHOLDER TODO: Add .NET projects to the src folder and run docfx to generate REAL API Documentation !"
   },
+  "api/TS.GazeInteraction.GazeInteractable.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.html",
+    "title": "Class GazeInteractable | Gaze Interaction System",
+    "keywords": "Class GazeInteractable Represents an interactable object that responds to gaze-based interactions. Inheritance System.Object GazeInteractable Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public class GazeInteractable : MonoBehaviour Fields OnGazeActivated Declaration public UnityEvent OnGazeActivated Field Value Type Description UnityEvent OnGazeEnter Declaration public UnityEvent OnGazeEnter Field Value Type Description UnityEvent OnGazeExit Declaration public UnityEvent OnGazeExit Field Value Type Description UnityEvent OnGazeStay Declaration public UnityEvent OnGazeStay Field Value Type Description UnityEvent OnGazeToggle Declaration public UnityEvent<bool> OnGazeToggle Field Value Type Description UnityEvent < System.Boolean > Properties IsActivable Indicates whether the interactable is activable. Declaration public bool IsActivable { get; } Property Value Type Description System.Boolean IsActivated Indicates whether the interactable is currenlty activated. Declaration public bool IsActivated { get; } Property Value Type Description System.Boolean IsEnabled Indicates whether the interactable is enabled. Declaration public bool IsEnabled { get; set; } Property Value Type Description System.Boolean Methods Activate() Activates the interactable and invokes the activated event. Declaration public void Activate() Enable(Boolean) Enables or disables the interactable game object. Declaration public void Enable(bool enable) Parameters Type Name Description System.Boolean enable True to enable, false to disable. GazeEnter(GazeInteractor, Vector3) Invokes the gaze enter event. Declaration public void GazeEnter(GazeInteractor interactor, Vector3 point) Parameters Type Name Description GazeInteractor interactor Vector3 point GazeExit(GazeInteractor) Invokes the gaze exit event after the _exitDelay duration. Declaration public void GazeExit(GazeInteractor interactor) Parameters Type Name Description GazeInteractor interactor GazeStay(GazeInteractor, Vector3) Invokes the gaze stay event. Declaration public void GazeStay(GazeInteractor interactor, Vector3 point) Parameters Type Name Description GazeInteractor interactor Vector3 point Events Activated Event triggered when the interactable is activated. Declaration public event GazeInteractable.OnActivated Activated Event Type Type Description GazeInteractable.OnActivated Enter Event triggered when the gaze enters the interactable. Declaration public event GazeInteractable.OnEnter Enter Event Type Type Description GazeInteractable.OnEnter Exit Event triggered when the gaze exits the interactable. Declaration public event GazeInteractable.OnExit Exit Event Type Type Description GazeInteractable.OnExit Stay Event triggered while the gaze remains on the interactable. Declaration public event GazeInteractable.OnStay Stay Event Type Type Description GazeInteractable.OnStay"
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnActivated.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnActivated.html",
+    "title": "Delegate GazeInteractable.OnActivated | Gaze Interaction System",
+    "keywords": "Delegate GazeInteractable.OnActivated Delegate for handling the activation event. Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public delegate void OnActivated(GazeInteractable interactable); Parameters Type Name Description GazeInteractable interactable The interactable object."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnEnter.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnEnter.html",
+    "title": "Delegate GazeInteractable.OnEnter | Gaze Interaction System",
+    "keywords": "Delegate GazeInteractable.OnEnter Delegate for handling the gaze enter event. Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public delegate void OnEnter(GazeInteractable interactable, GazeInteractor interactor, Vector3 point); Parameters Type Name Description GazeInteractable interactable The interactable object. GazeInteractor interactor The gaze interactor. Vector3 point The point where the gaze entered."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnExit.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnExit.html",
+    "title": "Delegate GazeInteractable.OnExit | Gaze Interaction System",
+    "keywords": "Delegate GazeInteractable.OnExit Delegate for handling the gaze exit event. Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public delegate void OnExit(GazeInteractable interactable, GazeInteractor interactor); Parameters Type Name Description GazeInteractable interactable The interactable object. GazeInteractor interactor The gaze interactor."
+  },
+  "api/TS.GazeInteraction.GazeInteractable.OnStay.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractable.OnStay.html",
+    "title": "Delegate GazeInteractable.OnStay | Gaze Interaction System",
+    "keywords": "Delegate GazeInteractable.OnStay Delegate for handling the gaze stay event. Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public delegate void OnStay(GazeInteractable interactable, GazeInteractor interactor, Vector3 point); Parameters Type Name Description GazeInteractable interactable The interactable object. GazeInteractor interactor The gaze interactor. Vector3 point The current gaze point."
+  },
+  "api/TS.GazeInteraction.GazeInteractor.html": {
+    "href": "api/TS.GazeInteraction.GazeInteractor.html",
+    "title": "Class GazeInteractor | Gaze Interaction System",
+    "keywords": "Class GazeInteractor Manages gaze-based interactions with interactables. Inheritance System.Object GazeInteractor Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public class GazeInteractor : MonoBehaviour"
+  },
+  "api/TS.GazeInteraction.GazeReticle.html": {
+    "href": "api/TS.GazeInteraction.GazeReticle.html",
+    "title": "Class GazeReticle | Gaze Interaction System",
+    "keywords": "Class GazeReticle Visual representation of the point of interaction. Inheritance System.Object GazeReticle Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public class GazeReticle : MonoBehaviour Methods Enable(Boolean) Toggles the visibility of the reticle GameObject. Declaration public void Enable(bool enable) Parameters Type Name Description System.Boolean enable Whether to enable or disable the reticle. SetInteractor(GazeInteractor) Assigns the GazeInteractor using this reticle. Declaration public void SetInteractor(GazeInteractor interactor) Parameters Type Name Description GazeInteractor interactor The GazeInteractor to associate with this reticle. SetProgress(Single) Updates the progress visual indicator. Declaration public void SetProgress(float progress) Parameters Type Name Description System.Single progress The progress value (0 to 1) to display. SetTarget(RaycastHit) Assigns the current hit point to adjust the reticle position and rotation. Declaration public void SetTarget(RaycastHit hit) Parameters Type Name Description RaycastHit hit The RaycastHit containing information about the hit point. SetType(ReticleType) Sets the type of reticle (visible or invisible). Declaration public void SetType(ReticleType type) Parameters Type Name Description ReticleType type The desired reticle type."
+  },
+  "api/TS.GazeInteraction.html": {
+    "href": "api/TS.GazeInteraction.html",
+    "title": "Namespace TS.GazeInteraction | Gaze Interaction System",
+    "keywords": "Namespace TS.GazeInteraction Classes GazeInteractable Represents an interactable object that responds to gaze-based interactions. GazeInteractor Manages gaze-based interactions with interactables. GazeReticle Visual representation of the point of interaction. ResourcesManager Loads assets from the Resources directory. Enums ReticleType Types of reticles (visual feedback) for gaze interactions. Delegates GazeInteractable.OnActivated Delegate for handling the activation event. GazeInteractable.OnEnter Delegate for handling the gaze enter event. GazeInteractable.OnExit Delegate for handling the gaze exit event. GazeInteractable.OnStay Delegate for handling the gaze stay event."
+  },
+  "api/TS.GazeInteraction.ResourcesManager.html": {
+    "href": "api/TS.GazeInteraction.ResourcesManager.html",
+    "title": "Class ResourcesManager | Gaze Interaction System",
+    "keywords": "Class ResourcesManager Loads assets from the Resources directory. Inheritance System.Object ResourcesManager Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public class ResourcesManager : MonoBehaviour Fields FILE_PREFAB_RETICLE Declaration public const string FILE_PREFAB_RETICLE = \"gaze_reticle\" Field Value Type Description System.String Methods GetPrefab(String) Loads and returns the asset specified in file from the Resources directory. Declaration public static GameObject GetPrefab(string file) Parameters Type Name Description System.String file Name of the asset to load. Use one of the constants. Returns Type Description GameObject Returns the loaded GameObject."
+  },
+  "api/TS.GazeInteraction.ReticleType.html": {
+    "href": "api/TS.GazeInteraction.ReticleType.html",
+    "title": "Enum ReticleType | Gaze Interaction System",
+    "keywords": "Enum ReticleType Types of reticles (visual feedback) for gaze interactions. Namespace : TS.GazeInteraction Assembly : cs.temp.dll.dll Syntax public enum ReticleType Fields Name Description Default Visible only on detection. Invisible Always invisible. Visible Always visible."
+  },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
     "title": "Getting Started | Gaze Interaction System",

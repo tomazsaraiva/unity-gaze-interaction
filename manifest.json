@@ -16,12 +16,144 @@
       "is_incremental": false
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnActivated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnActivated.html",
+          "hash": "CsjL76bof9XXl3baHaoQOiuq4P3PrxMy30874dkH4Bo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnEnter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnEnter.html",
+          "hash": "ErvZFnlGT8bxI+8Ld8jpPSsFhuW3lt608Lm2mSgJn7s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnExit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnExit.html",
+          "hash": "QomeJ6GRT0+mz6EadB7qeVRZFghAqA8AGqUT4xK1PZY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.OnStay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.OnStay.html",
+          "hash": "iWBSTzkXZ5vWfLYNpFjVhze5KI90L55IiwoW0jR/4s8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeInteractable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeInteractable.html",
+          "hash": "9iB/fvyfUtgxkGcJEBN1G7BdVRS01zbq7iWQ9Y05ZFc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeInteractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeInteractor.html",
+          "hash": "pcQNxd5xecjvANLHmjsRcgTustHU9syijh8ViJZHJD8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.GazeReticle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.GazeReticle.html",
+          "hash": "6AOqmA2zRY5XXqtlln2nOmDIht94NfD9d6Qrs2EZdi4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.ResourcesManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.ResourcesManager.html",
+          "hash": "44vM90MYXdGswdAHojVLIvT1cM+T+WRaIM1hJUXsQpI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.ReticleType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.ReticleType.html",
+          "hash": "X0Amhiq9Vfs/+ZviXwrQ+mBwijXiZSlJDbybzQe8BMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.GazeInteraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.GazeInteraction.html",
+          "hash": "0TGKjmKw3751TfE7XWAsQeDBgCeDr0cozHuvYk3A2vc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "NqJfxJ0JYXW2EDjqBKNfkAmIBbUlr6iOHvMhgYWyW1E="
+          "hash": "jxFWOWBHRnTsp+nHpp8OURT+T3Lgpp1TWdoR7pPn0mo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "qqNyhJ5opp5/bV5uB5YF+QoCVbHFtx60NMacNxj2Zh0="
         }
       },
       "is_incremental": false,
@@ -131,6 +263,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
