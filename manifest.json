@@ -218,12 +218,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "hR3/ikPtrNhLgwtjdTxCGEI9lXiEh8ge+S86sx+T2lE="
+          "hash": "W9HEYhAo3UVRAlWbBmvqwxvM2ziZyrn3ZgZoIZ+oZXo="
         }
       },
       "is_incremental": false,
