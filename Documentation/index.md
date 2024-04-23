@@ -6,8 +6,8 @@ The Gaze Interaction system is based on the same approach used in the [Unity XR 
 
 The system is built on two main components:
 
-- [GazeInteractor](api/TS.GazeInteraction.GazeInteractor.html): Component attached to the Main Camera that sends out rays to detect [GazeInteractables](api/TS.GazeInteraction.GazeInteractable.html).
-- [GazeInteractable](api/TS.GazeInteraction.GazeInteractable.html): Component attached to objects in the scene for the user to interact with. When the Gaze Interactor detects a Gaze Interactable, it triggers interaction events.
+- [GazeInteractor](./api/TS.GazeInteraction.GazeInteractor.html): Component attached to the Main Camera that sends out rays to detect [GazeInteractables](api/TS.GazeInteraction.GazeInteractable.html).
+- [GazeInteractable](./api/TS.GazeInteraction.GazeInteractable.html): Component attached to objects in the scene for the user to interact with. When the Gaze Interactor detects a Gaze Interactable, it triggers interaction events.
 
 ## Setting Up the System
 
@@ -21,14 +21,14 @@ The system is built on two main components:
    1. In the Hierarchy window, create a new empty GameObject as a child of your main camera.
    2. Add the GazeInteractor script to this new GameObject. You can find this script in the inspector window by searching for "GazeInteractor".
 
-![unity_gaze_interactor.png](images/unity_gaze_interactor.png)
+![unity_gaze_interactor.png](./images/unity_gaze_interactor.png)
 
 ### How to setup GazeInteractables
 
    1. Attach the GazeInteractable script to any object in your scene that you want the user to be able to interact with by looking at it.
    2. In the inspector window, you can define what happens when the user looks at the object for a certain amount of time (dwell time) or clicks on it (optional).
 
-![f838ee23d40c5c4a78188618c0d7ee66.png](images/unity_gaze_interactable.png)
+![f838ee23d40c5c4a78188618c0d7ee66.png](./images/unity_gaze_interactable.png)
 
 This basic setup allows users to interact with objects simply by looking at them.
 
