@@ -3,7 +3,7 @@
         {
             "src": [
                 {
-                    "src": "../Assets/GazeInteraction/",
+                    "src": "Assets/GazeInteraction/",
                     "files": [
                         "**/*.cs"
                     ]
@@ -31,7 +31,8 @@
                 ]
             }
         ],
-        "output": "../_site",
+        "output": "_site",
+        "dest": "_site",
         "template": [
             "default",
             "unity"
@@ -43,7 +44,7 @@
             "pdf": true
         },
         "sitemap": {
-            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction"
+            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction/Documentation/"
         }
     }
 }
