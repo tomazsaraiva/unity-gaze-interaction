@@ -44,7 +44,7 @@
             "pdf": true
         },
         "sitemap": {
-            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction/Documentation/"
+            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction/"
         }
     }
 }

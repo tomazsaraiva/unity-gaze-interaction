@@ -28,7 +28,7 @@ The system is built on two main components:
    1. Attach the GazeInteractable script to any object in your scene that you want the user to be able to interact with by looking at it.
    2. In the inspector window, you can define what happens when the user looks at the object for a certain amount of time (dwell time) or clicks on it (optional).
 
-![f838ee23d40c5c4a78188618c0d7ee66.png](./images/unity_gaze_interactable.png)
+![unity_gaze_interactable.png](./images/unity_gaze_interactable.png)
 
 This basic setup allows users to interact with objects simply by looking at them.
 
