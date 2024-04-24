@@ -33,11 +33,14 @@ references:
   fullName: TS.GazeInteraction.GazeInteractable.Activated
   nameWithType: GazeInteractable.Activated
 - uid: TS.GazeInteraction.GazeInteractable.Enable(System.Boolean)
-  name: Enable(Boolean)
+  name: Enable(bool)
   href: api/TS.GazeInteraction.GazeInteractable.html#TS_GazeInteraction_GazeInteractable_Enable_System_Boolean_
   commentId: M:TS.GazeInteraction.GazeInteractable.Enable(System.Boolean)
-  fullName: TS.GazeInteraction.GazeInteractable.Enable(System.Boolean)
-  nameWithType: GazeInteractable.Enable(Boolean)
+  name.vb: Enable(Boolean)
+  fullName: TS.GazeInteraction.GazeInteractable.Enable(bool)
+  fullName.vb: TS.GazeInteraction.GazeInteractable.Enable(Boolean)
+  nameWithType: GazeInteractable.Enable(bool)
+  nameWithType.vb: GazeInteractable.Enable(Boolean)
 - uid: TS.GazeInteraction.GazeInteractable.Enable*
   name: Enable
   href: api/TS.GazeInteraction.GazeInteractable.html#TS_GazeInteraction_GazeInteractable_Enable_
@@ -208,11 +211,14 @@ references:
   fullName: TS.GazeInteraction.GazeReticle
   nameWithType: GazeReticle
 - uid: TS.GazeInteraction.GazeReticle.Enable(System.Boolean)
-  name: Enable(Boolean)
+  name: Enable(bool)
   href: api/TS.GazeInteraction.GazeReticle.html#TS_GazeInteraction_GazeReticle_Enable_System_Boolean_
   commentId: M:TS.GazeInteraction.GazeReticle.Enable(System.Boolean)
-  fullName: TS.GazeInteraction.GazeReticle.Enable(System.Boolean)
-  nameWithType: GazeReticle.Enable(Boolean)
+  name.vb: Enable(Boolean)
+  fullName: TS.GazeInteraction.GazeReticle.Enable(bool)
+  fullName.vb: TS.GazeInteraction.GazeReticle.Enable(Boolean)
+  nameWithType: GazeReticle.Enable(bool)
+  nameWithType.vb: GazeReticle.Enable(Boolean)
 - uid: TS.GazeInteraction.GazeReticle.Enable*
   name: Enable
   href: api/TS.GazeInteraction.GazeReticle.html#TS_GazeInteraction_GazeReticle_Enable_
@@ -234,11 +240,14 @@ references:
   fullName: TS.GazeInteraction.GazeReticle.SetInteractor
   nameWithType: GazeReticle.SetInteractor
 - uid: TS.GazeInteraction.GazeReticle.SetProgress(System.Single)
-  name: SetProgress(Single)
+  name: SetProgress(float)
   href: api/TS.GazeInteraction.GazeReticle.html#TS_GazeInteraction_GazeReticle_SetProgress_System_Single_
   commentId: M:TS.GazeInteraction.GazeReticle.SetProgress(System.Single)
-  fullName: TS.GazeInteraction.GazeReticle.SetProgress(System.Single)
-  nameWithType: GazeReticle.SetProgress(Single)
+  name.vb: SetProgress(Single)
+  fullName: TS.GazeInteraction.GazeReticle.SetProgress(float)
+  fullName.vb: TS.GazeInteraction.GazeReticle.SetProgress(Single)
+  nameWithType: GazeReticle.SetProgress(float)
+  nameWithType.vb: GazeReticle.SetProgress(Single)
 - uid: TS.GazeInteraction.GazeReticle.SetProgress*
   name: SetProgress
   href: api/TS.GazeInteraction.GazeReticle.html#TS_GazeInteraction_GazeReticle_SetProgress_
@@ -285,11 +294,14 @@ references:
   fullName: TS.GazeInteraction.ResourcesManager.FILE_PREFAB_RETICLE
   nameWithType: ResourcesManager.FILE_PREFAB_RETICLE
 - uid: TS.GazeInteraction.ResourcesManager.GetPrefab(System.String)
-  name: GetPrefab(String)
+  name: GetPrefab(string)
   href: api/TS.GazeInteraction.ResourcesManager.html#TS_GazeInteraction_ResourcesManager_GetPrefab_System_String_
   commentId: M:TS.GazeInteraction.ResourcesManager.GetPrefab(System.String)
-  fullName: TS.GazeInteraction.ResourcesManager.GetPrefab(System.String)
-  nameWithType: ResourcesManager.GetPrefab(String)
+  name.vb: GetPrefab(String)
+  fullName: TS.GazeInteraction.ResourcesManager.GetPrefab(string)
+  fullName.vb: TS.GazeInteraction.ResourcesManager.GetPrefab(String)
+  nameWithType: ResourcesManager.GetPrefab(string)
+  nameWithType.vb: ResourcesManager.GetPrefab(String)
 - uid: TS.GazeInteraction.ResourcesManager.GetPrefab*
   name: GetPrefab
   href: api/TS.GazeInteraction.ResourcesManager.html#TS_GazeInteraction_ResourcesManager_GetPrefab_
