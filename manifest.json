@@ -176,10 +176,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/unity_gaze_interactable_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/unity_gaze_interactable_inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/unity_gaze_interactor.png",
       "output": {
         "resource": {
           "relative_path": "images/unity_gaze_interactor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/unity_gaze_interactor_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/unity_gaze_interactor_inspector.png"
         }
       },
       "version": ""
