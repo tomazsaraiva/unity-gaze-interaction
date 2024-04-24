@@ -14,16 +14,16 @@ When the Gaze Interactor detects a Gaze Interactable, it triggers interaction [e
 ### How to setup the GazeInteractor
 
    1. In the Hierarchy window, create an empty GameObject as a child of your Main Camera.
-   2. Add the [GazeInteractor](api/TS.GazeInteraction.GazeInteractor.html) component to this new GameObject. 
+   2. Add the [GazeInteractor](api/TS.GazeInteraction.GazeInteractor.html) component to this new GameObject.
 
-![unity_gaze_interactor.png](:/9980b850f91a400d8bd3eabd96ef668f)
+![unity_gaze_interactor.png](../images/unity_gaze_interactor.png)
 
 ### How to setup GazeInteractables
 
    1. Attach the [GazeInteractable](api/TS.GazeInteraction.GazeInteractable.html) component to any object in your scene that you want users to interact with via gaze.
    2. In the Inspector Window, use the interaction [events](https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.html#events) to specify what happens when the user looks at the object.
 
-![unity_gaze_interactable.png](:/53b4d08a28b2403ca4a1fbc329b6c20a)
+![unity_gaze_interactable.png](../images/unity_gaze_interactable.png)
 
 ## Customization
 
@@ -31,7 +31,7 @@ The basic setup allows users to interact with objects simply by looking at them.
 
 ### How to customize the GazeInteractor
 
-![Gaze Interactor Inspector.png](:/596bf4feb449450baa813e2175d76be1)
+![Gaze Interactor Inspector.png](../images/unity_gaze_interactable_inspector.png)
 
 - **Max Detection Distance:** This property defines the maximum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects beyond this distance will not trigger interaction.
 - **Min Detection Distance:** This property defines the minimum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects closer than this distance will not trigger interaction.
@@ -41,7 +41,7 @@ The basic setup allows users to interact with objects simply by looking at them.
 
 ### How to customize the GazeInteractables
 
-![Gaze Interactable Inspector.png](:/d7eafbab6b784368b304ef6ea9fa26fc)
+![Gaze Interactable Inspector.png](../images/unity_gaze_interactor_inspector.png)
 
 - **Is Activable:** This property determines whether the GazeInteractable object can be activated through gaze interaction. If set to false, users looking at the object will not trigger the [On Gaze Activated](https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html) event.
 - **Exit Delay:** This property defines a time delay (in seconds) before the [On Gaze Exit](https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html) event is triggered after the user's gaze moves away from the GazeInteractable object. This allows for a smoother user experience when transitioning focus between objects.
