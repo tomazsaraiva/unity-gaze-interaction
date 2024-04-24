@@ -31,7 +31,7 @@ The basic setup allows users to interact with objects simply by looking at them.
 
 ### How to customize the GazeInteractor
 
-![Gaze Interactor Inspector.png](../images/unity_gaze_interactable_inspector.png)
+![Gaze Interactor Inspector.png](../images/unity_gaze_interactor_inspector.png)
 
 - **Max Detection Distance:** This property defines the maximum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects beyond this distance will not trigger interaction.
 - **Min Detection Distance:** This property defines the minimum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects closer than this distance will not trigger interaction.
@@ -41,7 +41,7 @@ The basic setup allows users to interact with objects simply by looking at them.
 
 ### How to customize the GazeInteractables
 
-![Gaze Interactable Inspector.png](../images/unity_gaze_interactor_inspector.png)
+![Gaze Interactable Inspector.png](../images/unity_gaze_interactable_inspector.png)
 
 - **Is Activable:** This property determines whether the GazeInteractable object can be activated through gaze interaction. If set to false, users looking at the object will not trigger the [On Gaze Activated](https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html) event.
 - **Exit Delay:** This property defines a time delay (in seconds) before the [On Gaze Exit](https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html) event is triggered after the user's gaze moves away from the GazeInteractable object. This allows for a smoother user experience when transitioning focus between objects.
