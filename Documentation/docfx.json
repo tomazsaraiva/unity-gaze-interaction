@@ -40,7 +40,10 @@
             "_appName": "Gaze Interaction System",
             "_appTitle": "Gaze Interaction System",
             "_appLogoPath": "images/logo.svg",
+            "_appFaviconPath": "images/favicon.ico",
             "_enableSearch": true,
+            "_enableNewTab": true,
+            "_disableContribution": true,
             "pdf": true
         }
     }
