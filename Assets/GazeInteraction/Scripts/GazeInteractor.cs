@@ -120,11 +120,16 @@ namespace TS.GazeInteraction
         /// </summary>
         private void Reset()
         {
-            _reticle.SetProgress(0);
+            if (_reticle != null)
+            {
+                _reticle.SetProgress(0);
+            }
 
-            if (_interactable == null) { return; }
-            _interactable.GazeExit(this);
-            _interactable = null;
+            if (_interactable != null)
+            {
+                _interactable.GazeExit(this);
+                _interactable = null;
+            }
         }
 
 #if UNITY_EDITOR

@@ -11,6 +11,8 @@ When the Gaze Interactor detects a Gaze Interactable, it triggers interaction [e
 
 ## Setup
 
+> [!Video https://www.youtube.com/embed/qKt_A2c6eOc]
+
 ### How to setup the GazeInteractor
 
    1. In the Hierarchy window, create an empty GameObject as a child of your Main Camera.
