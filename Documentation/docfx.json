@@ -39,6 +39,7 @@
         "globalMetadata": {
             "_appName": "Gaze Interaction System",
             "_appTitle": "Gaze Interaction System",
+            "_appLogoPath": "images/logo.svg",
             "_enableSearch": true,
             "pdf": true
         }
