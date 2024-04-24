@@ -16,8 +16,4 @@ The Unity Gaze Interaction System is a lightweight plugin that enables gaze inte
 - Explore the [API Reference](https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.html) for more details.
 - Modify the source code available on [GitHub](https://github.com/tomazsaraiva/unity-gaze-interaction).
 - Install directly from the [Unity Asset Store](https://assetstore.unity.com/packages/tools/camera/vr-gaze-interaction-system-241337).
-
-## Get in touch
-
-- [tomazsaraiva.com](https://tomazsaraiva.com)
-- [tomazsaraiva](https://www.youtube.com/c/tomazsaraiva)
+- Get in touch with me at [tomazsaraiva.com](https://tomazsaraiva.com).
