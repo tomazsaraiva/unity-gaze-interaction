@@ -31,7 +31,6 @@
                 ]
             }
         ],
-        "output": "_site",
         "dest": "_site",
         "template": [
             "default",
@@ -42,9 +41,6 @@
             "_appTitle": "Gaze Interaction System",
             "_enableSearch": true,
             "pdf": true
-        },
-        "sitemap": {
-            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction/"
         }
     }
 }
