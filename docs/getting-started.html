@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Unity Gaze Interaction System (UGIS) | Gaze Interaction System ">
     
-      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -17,7 +17,7 @@
       <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
-    
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -81,48 +81,48 @@
 <h2 id="core-components">Core Components</h2>
 <p>The system is built on two main components:</p>
 <ul>
-<li><a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a>: Component attached to the Main Camera that sends out rays to detect GazeInteractables.</li>
-<li><a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a>: Component attached to objects in the scene for the user to interact with.</li>
+<li><a href="../api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a>: Component attached to the Main Camera that sends out rays to detect GazeInteractables.</li>
+<li><a href="../api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a>: Component attached to objects in the scene for the user to interact with.</li>
 </ul>
-<p>When the Gaze Interactor detects a Gaze Interactable, it triggers interaction <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.html#events">events</a>.</p>
+<p>When the Gaze Interactor detects a Gaze Interactable, it triggers interaction <a href="../api/TS.GazeInteraction.GazeInteractable.html#events">events</a>.</p>
 <h2 id="setup">Setup</h2>
 <h3 id="how-to-setup-the-gazeinteractor">How to setup the GazeInteractor</h3>
 <ol>
 <li>In the Hierarchy window, create an empty GameObject as a child of your Main Camera.</li>
-<li>Add the <a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> component to this new GameObject.</li>
+<li>Add the <a href="../api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> component to this new GameObject.</li>
 </ol>
 <p><img src="../images/unity_gaze_interactor.png" alt="unity_gaze_interactor.png"></p>
 <h3 id="how-to-setup-gazeinteractables">How to setup GazeInteractables</h3>
 <ol>
-<li>Attach the <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a> component to any object in your scene that you want users to interact with via gaze.</li>
-<li>In the Inspector Window, use the interaction <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.html#events">events</a> to specify what happens when the user looks at the object.</li>
+<li>Attach the <a href="../api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a> component to any object in your scene that you want users to interact with via gaze.</li>
+<li>In the Inspector Window, use the interaction <a href="../api/TS.GazeInteraction.GazeInteractable.html#events">events</a> to specify what happens when the user looks at the object.</li>
 </ol>
 <p><img src="../images/unity_gaze_interactable.png" alt="unity_gaze_interactable.png"></p>
 <h2 id="customization">Customization</h2>
-<p>The basic setup allows users to interact with objects simply by looking at them. Both the <a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> and <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a> Components have options you can use to customize their behavior.</p>
+<p>The basic setup allows users to interact with objects simply by looking at them. Both the <a href="../api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> and <a href="../api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a> Components have options you can use to customize their behavior.</p>
 <h3 id="how-to-customize-the-gazeinteractor">How to customize the GazeInteractor</h3>
 <p><img src="../images/unity_gaze_interactor_inspector.png" alt="Gaze Interactor Inspector.png"></p>
 <ul>
 <li><strong>Max Detection Distance:</strong> This property defines the maximum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects beyond this distance will not trigger interaction.</li>
 <li><strong>Min Detection Distance:</strong> This property defines the minimum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects closer than this distance will not trigger interaction.</li>
-<li><strong>Time To Activate:</strong> This property sets the dwell time required for the Gaze Interaction System to register a successful activation. Users must look at a Gaze Interactable object for this duration (in seconds) before it triggers the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a> event.</li>
+<li><strong>Time To Activate:</strong> This property sets the dwell time required for the Gaze Interaction System to register a successful activation. Users must look at a Gaze Interactable object for this duration (in seconds) before it triggers the <a href="../api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a> event.</li>
 <li><strong>Layer Mask:</strong> This property defines a layer mask that restricts which objects in the scene the GazeInteractor's raycast can collide with. Only objects included in the selected layers will be considered Gaze Interactables.</li>
-<li><strong>Reticle Type:</strong> This property determines the type of reticle (visual feedback) displayed to indicate where the user is looking. The available options are defined by the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.ReticleType.html">ReticleType</a> enumeration within the code.</li>
+<li><strong>Reticle Type:</strong> This property determines the type of reticle (visual feedback) displayed to indicate where the user is looking. The available options are defined by the <a href="../api/TS.GazeInteraction.ReticleType.html">ReticleType</a> enumeration within the code.</li>
 </ul>
 <h3 id="how-to-customize-the-gazeinteractables">How to customize the GazeInteractables</h3>
 <p><img src="../images/unity_gaze_interactable_inspector.png" alt="Gaze Interactable Inspector.png"></p>
 <ul>
-<li><strong>Is Activable:</strong> This property determines whether the GazeInteractable object can be activated through gaze interaction. If set to false, users looking at the object will not trigger the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a> event.</li>
-<li><strong>Exit Delay:</strong> This property defines a time delay (in seconds) before the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html">On Gaze Exit</a> event is triggered after the user's gaze moves away from the GazeInteractable object. This allows for a smoother user experience when transitioning focus between objects.</li>
-<li><strong><a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnEnter.html">On Gaze Enter</a>:</strong> This UnityEvent is triggered when the user's gaze initially focuses on a GazeInteractable object. You can use this event to perform actions like highlighting the object or playing a sound effect.</li>
-<li><strong><a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnStay.html">On Gaze Stay</a>:</strong> This UnityEvent is triggered repeatedly while the user's gaze remains focused on a GazeInteractable object. This is typically used for actions that require sustained focus, such as charging up an attack.</li>
-<li><strong><a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html">On Gaze Exit</a>:</strong> This UnityEvent is triggered after the user's gaze moves away from a GazeInteractable object, following the delay defined by _exitDelay. You can use this event to reset the object's state or perform cleanup actions.</li>
-<li><strong><a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a>:</strong> This UnityEvent is triggered when the user's gaze remains focused on a GazeInteractable object for the duration specified by <code>Time To Activate</code> (dwell time) and the object is set to be activable (<code>Is Activable</code> is true). This is the core interaction event for the system.</li>
+<li><strong>Is Activable:</strong> This property determines whether the GazeInteractable object can be activated through gaze interaction. If set to false, users looking at the object will not trigger the <a href="../api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a> event.</li>
+<li><strong>Exit Delay:</strong> This property defines a time delay (in seconds) before the <a href="../api/TS.GazeInteraction.GazeInteractable.OnExit.html">On Gaze Exit</a> event is triggered after the user's gaze moves away from the GazeInteractable object. This allows for a smoother user experience when transitioning focus between objects.</li>
+<li><strong><a href="../api/TS.GazeInteraction.GazeInteractable.OnEnter.html">On Gaze Enter</a>:</strong> This UnityEvent is triggered when the user's gaze initially focuses on a GazeInteractable object. You can use this event to perform actions like highlighting the object or playing a sound effect.</li>
+<li><strong><a href="../api/TS.GazeInteraction.GazeInteractable.OnStay.html">On Gaze Stay</a>:</strong> This UnityEvent is triggered repeatedly while the user's gaze remains focused on a GazeInteractable object. This is typically used for actions that require sustained focus, such as charging up an attack.</li>
+<li><strong><a href="../api/TS.GazeInteraction.GazeInteractable.OnExit.html">On Gaze Exit</a>:</strong> This UnityEvent is triggered after the user's gaze moves away from a GazeInteractable object, following the delay defined by _exitDelay. You can use this event to reset the object's state or perform cleanup actions.</li>
+<li><strong><a href="../api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a>:</strong> This UnityEvent is triggered when the user's gaze remains focused on a GazeInteractable object for the duration specified by <code>Time To Activate</code> (dwell time) and the object is set to be activable (<code>Is Activable</code> is true). This is the core interaction event for the system.</li>
 </ul>
 <h2 id="helpful-links">Helpful links</h2>
 <ul>
 <li>For a more in-depth explanation, check out this <a href="https://www.youtube.com/watch?v=8p4erfeWatA&amp;list=PLBBRLwJVhEhNeLRaBjJh7O8cvGHFKOpGW&amp;index=1">video</a>.</li>
-<li>Explore the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.html">API Reference</a> for more details.</li>
+<li>Explore the <a href="../api/TS.GazeInteraction.html">API Reference</a> for more details.</li>
 <li>Modify the source code available on <a href="https://github.com/tomazsaraiva/unity-gaze-interaction">GitHub</a>.</li>
 <li>Install directly from the <a href="https://assetstore.unity.com/packages/tools/camera/vr-gaze-interaction-system-241337">Unity Asset Store</a>.</li>
 <li>Get in touch with me at <a href="https://tomazsaraiva.com">tomazsaraiva.com</a>.</li>
@@ -132,13 +132,6 @@
 
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/tomazsaraiva/unity-gaze-interaction/blob/master/Documentation/docs/getting-started.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
