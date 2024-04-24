@@ -173,6 +173,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/unity_gaze_interaction_system.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "images/unity_gaze_interaction_system.mp4"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/unity_gaze_interactor.png",
       "output": {
         "resource": {
