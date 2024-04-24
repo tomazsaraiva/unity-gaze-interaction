@@ -6,8 +6,8 @@ The Gaze Interaction system is based on the same approach used in the [Unity XR 
 
 The system is built on two main components:
 
-- [GazeInteractor](./api/TS.GazeInteraction.GazeInteractor.html): Component attached to the Main Camera that sends out rays to detect [GazeInteractables](api/TS.GazeInteraction.GazeInteractable.html).
-- [GazeInteractable](./api/TS.GazeInteraction.GazeInteractable.html): Component attached to objects in the scene for the user to interact with. When the Gaze Interactor detects a Gaze Interactable, it triggers interaction events.
+- [GazeInteractor](api/TS.GazeInteraction.GazeInteractor.html): Component attached to the Main Camera that sends out rays to detect [GazeInteractables](api/TS.GazeInteraction.GazeInteractable.html).
+- [GazeInteractable](api/TS.GazeInteraction.GazeInteractable.html): Component attached to objects in the scene for the user to interact with. When the Gaze Interactor detects a Gaze Interactable, it triggers interaction events.
 
 ## Setting Up the System
 
