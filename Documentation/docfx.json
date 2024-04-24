@@ -3,37 +3,24 @@
         {
             "src": [
                 {
-                    "src": "..",
+                    "src": "../Assets/GazeInteraction/",
                     "files": [
-                        "Assets/GazeInteraction/**/*.cs"
+                        "**/*.cs"
                     ]
                 }
             ],
             "dest": "api",
-            "disableGitFeatures": false,
-            "disableDefaultFilter": false
+            "allowCompilationErrors": true
         }
     ],
     "build": {
-        "globalMetadata": {
-            "_appTitle": "Gaze Interaction System"
-        },
-        "sitemap": {
-            "baseUrl": "https://tomazsaraiva.github.io/unity-gaze-interaction"
-        },
         "content": [
             {
                 "files": [
-                    "api/**.yml",
-                    "api/index.md"
-                ]
-            },
-            {
-                "files": [
-                    "docs/**.md",
-                    "docs/**/toc.yml",
-                    "toc.yml",
-                    "*.md"
+                    "**/*.{md,yml}"
+                ],
+                "exclude": [
+                    "_site/**"
                 ]
             }
         ],
@@ -44,28 +31,17 @@
                 ]
             }
         ],
-        "overwrite": [
-            {
-                "files": [
-                    "apidoc/**.md"
-                ],
-                "exclude": [
-                    "obj/**",
-                    "_site/**"
-                ]
-            }
-        ],
-        "dest": "../_site",
-        "globalMetadataFiles": [],
-        "fileMetadataFiles": [],
+        "dest": "_site",
         "template": [
-            "default"
+            "default",
+            "unity"
         ],
-        "postProcessors": [],
-        "markdownEngineName": "markdig",
-        "noLangKeyword": false,
-        "keepFileLink": false,
-        "cleanupCacheHistory": false,
-        "disableGitFeatures": false
+        "globalMetadata": {
+            "_appName": "Gaze Interaction System",
+            "_appTitle": "Gaze Interaction System",
+            "_appLogoPath": "images/logo.svg",
+            "_enableSearch": true,
+            "pdf": true
+        }
     }
 }
