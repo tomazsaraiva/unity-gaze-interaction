@@ -1,4 +1,4 @@
 - name: Docs
-  href: index.md
+  href: docs/
 - name: API
-  href: api/TS.GazeInteraction.html
+  href: api/
