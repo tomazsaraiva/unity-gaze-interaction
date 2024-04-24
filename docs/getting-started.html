@@ -101,7 +101,7 @@
 <h2 id="customization">Customization</h2>
 <p>The basic setup allows users to interact with objects simply by looking at them. Both the <a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a> and <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a> Components have options you can use to customize their behavior.</p>
 <h3 id="how-to-customize-the-gazeinteractor">How to customize the GazeInteractor</h3>
-<p><img src="../images/unity_gaze_interactable_inspector.png" alt="Gaze Interactor Inspector.png"></p>
+<p><img src="../images/unity_gaze_interactor_inspector.png" alt="Gaze Interactor Inspector.png"></p>
 <ul>
 <li><strong>Max Detection Distance:</strong> This property defines the maximum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects beyond this distance will not trigger interaction.</li>
 <li><strong>Min Detection Distance:</strong> This property defines the minimum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects closer than this distance will not trigger interaction.</li>
@@ -110,7 +110,7 @@
 <li><strong>Reticle Type:</strong> This property determines the type of reticle (visual feedback) displayed to indicate where the user is looking. The available options are defined by the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.ReticleType.html">ReticleType</a> enumeration within the code.</li>
 </ul>
 <h3 id="how-to-customize-the-gazeinteractables">How to customize the GazeInteractables</h3>
-<p><img src="../images/unity_gaze_interactor_inspector.png" alt="Gaze Interactable Inspector.png"></p>
+<p><img src="../images/unity_gaze_interactable_inspector.png" alt="Gaze Interactable Inspector.png"></p>
 <ul>
 <li><strong>Is Activable:</strong> This property determines whether the GazeInteractable object can be activated through gaze interaction. If set to false, users looking at the object will not trigger the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnActivated.html">On Gaze Activated</a> event.</li>
 <li><strong>Exit Delay:</strong> This property defines a time delay (in seconds) before the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.GazeInteractable.OnExit.html">On Gaze Exit</a> event is triggered after the user's gaze moves away from the GazeInteractable object. This allows for a smoother user experience when transitioning focus between objects.</li>
