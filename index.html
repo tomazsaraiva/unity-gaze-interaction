@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Gaze Interaction System | Gaze Interaction System </title>
+      <title>Unity Gaze Interaction System (UGIS) | Gaze Interaction System </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Gaze Interaction System | Gaze Interaction System ">
+      <meta name="title" content="Unity Gaze Interaction System (UGIS) | Gaze Interaction System ">
     
       <link rel="shortcut icon" href="favicon.ico">
       <link rel="stylesheet" href="styles/docfx.vendor.min.css">
@@ -69,56 +69,29 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gaze-interaction-system">Gaze Interaction System</h1>
+<h1 id="unity-gaze-interaction-system-ugis">Unity Gaze Interaction System (UGIS)</h1>
 
-<p>The Gaze Interaction system is based on the same approach used in the <a href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/index.html">Unity XR Interaction Toolkit</a>.</p>
-<h2 id="core-components">Core Components</h2>
-<p>The system is built on two main components:</p>
+<p>The Unity Gaze Interaction System is a lightweight plugin that enables gaze interaction in Unity projects, working for both VR and non-VR projects without requiring additional packages. Inspired by the <a href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/index.html">Unity XR Interaction Toolkit</a>, this system utilizes an Interactor-Interactable approach for intuitive interaction design.</p>
+<h2 id="features">Features</h2>
 <ul>
-<li><a href="api/TS.GazeInteraction.GazeInteractor.html">GazeInteractor</a>: Component attached to the Main Camera that sends out rays to detect <a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractables</a>.</li>
-<li><a href="api/TS.GazeInteraction.GazeInteractable.html">GazeInteractable</a>: Component attached to objects in the scene for the user to interact with. When the Gaze Interactor detects a Gaze Interactable, it triggers interaction events.</li>
+<li><strong>Gaze Distance</strong>: Define minimum and maximum range for gaze interaction.</li>
+<li><strong>Activation Time</strong>: Set dwell time required to activate objects with gaze.</li>
+<li><strong>Raycast Filtering</strong>: Choose which object layers respond to gaze.</li>
+<li><strong>Visual Feedback</strong>: Select the type of reticle displayed for user focus.</li>
+<li><strong>Gaze Events</strong>: Trigger actions based on user gaze behavior (enter, stay, exit, activate, toggle).</li>
 </ul>
-<h2 id="setting-up-the-system">Setting Up the System</h2>
-<h3 id="where-to-download">Where to download</h3>
+<h2 id="helpful-links">Helpful links</h2>
 <ul>
-<li><a href="https://assetstore.unity.com/packages/tools/camera/vr-gaze-interaction-system-241337">Unity Asset Store</a></li>
-<li><a href="https://github.com/tomazsaraiva/unity-gaze-interaction/">GitHub</a></li>
+<li>Follow the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/docs/getting-started.html">Getting Started</a> guide to get up and running.</li>
+<li>Explore the <a href="https://tomazsaraiva.github.io/unity-gaze-interaction/api/TS.GazeInteraction.html">API Reference</a> for more details.</li>
+<li>Modify the source code available on <a href="https://github.com/tomazsaraiva/unity-gaze-interaction">GitHub</a>.</li>
+<li>Install directly from the <a href="https://assetstore.unity.com/packages/tools/camera/vr-gaze-interaction-system-241337">Unity Asset Store</a>.</li>
 </ul>
-<h3 id="how-to-setup-the-gazeinteractor">How to setup the GazeInteractor</h3>
-<ol>
-<li>In the Hierarchy window, create a new empty GameObject as a child of your main camera.</li>
-<li>Add the GazeInteractor script to this new GameObject. You can find this script in the inspector window by searching for &quot;GazeInteractor&quot;.</li>
-</ol>
-<p><img src="images/unity_gaze_interactor.png" alt="unity_gaze_interactor.png"></p>
-<h3 id="how-to-setup-gazeinteractables">How to setup GazeInteractables</h3>
-<ol>
-<li>Attach the GazeInteractable script to any object in your scene that you want the user to be able to interact with by looking at it.</li>
-<li>In the inspector window, you can define what happens when the user looks at the object for a certain amount of time (dwell time) or clicks on it (optional).</li>
-</ol>
-<p><img src="images/unity_gaze_interactable.png" alt="unity_gaze_interactable.png"></p>
-<p>This basic setup allows users to interact with objects simply by looking at them.</p>
-<h2 id="customization">Customization</h2>
-<p>Both the GazeInteractor and GazeInteractable scripts have many options you can use to customize their behavior.</p>
-<h3 id="how-to-customize-the-gazeinteractor">How to customize the GazeInteractor</h3>
+<h2 id="get-in-touch">Get in touch</h2>
 <ul>
-<li><strong>_maxDetectionDistance:</strong> This property defines the maximum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects beyond this distance will not trigger interaction.</li>
-<li><strong>_minDetectionDistance:</strong> This property defines the minimum distance from the camera at which the GazeInteractor can detect Gaze Interactable objects. Users looking at objects closer than this distance will not trigger interaction.</li>
-<li><strong>_timeToActivate:</strong> This property sets the dwell time required for the Gaze Interaction System to register a successful activation. Users must look at a Gaze Interactable object for this duration (in seconds) before it triggers the activation event.</li>
-<li><strong>_layerMask:</strong> This property defines a layer mask that restricts which objects in the scene the GazeInteractor's raycast can collide with. Only objects included in the selected layers will be considered Gaze Interactables.</li>
-<li><strong>_reticleType:</strong> This property determines the type of reticle (visual feedback) displayed to indicate where the user is looking. The available options are defined by the <code>ReticleType</code> enumeration within the code.</li>
+<li><a href="https://tomazsaraiva.com">tomazsaraiva.com</a></li>
+<li><a href="https://www.youtube.com/c/tomazsaraiva">tomazsaraiva</a></li>
 </ul>
-<h3 id="how-to-customize-the-gazeinteractables">How to customize the GazeInteractables</h3>
-<ul>
-<li><strong>_isActivable:</strong> This property determines whether the GazeInteractable object can be activated through gaze interaction. If set to false, users looking at the object will not trigger the OnGazeActivated event.</li>
-<li><strong>_exitDelay:</strong> This property defines a time delay (in seconds) before the OnGazeExit event is triggered after the user's gaze moves away from the GazeInteractable object. This allows for a smoother user experience when transitioning focus between objects.</li>
-<li><strong>OnGazeEnter:</strong> This UnityEvent is triggered when the user's gaze initially focuses on a GazeInteractable object. You can use this event to perform actions like highlighting the object or playing a sound effect.</li>
-<li><strong>OnGazeStay:</strong> This UnityEvent is triggered repeatedly while the user's gaze remains focused on a GazeInteractable object. This is typically used for actions that require sustained focus, such as charging up an attack.</li>
-<li><strong>OnGazeExit:</strong> This UnityEvent is triggered after the user's gaze moves away from a GazeInteractable object, following the delay defined by _exitDelay. You can use this event to reset the object's state or perform cleanup actions.</li>
-<li><strong>OnGazeActivated:</strong> This UnityEvent is triggered when the user's gaze remains focused on a GazeInteractable object for the duration specified by _timeToActivate (dwell time) and the object is set to be activable (_isActivable is true). This is the core interaction event for the system.</li>
-<li><strong>OnGazeToggle:</strong> This UnityEvent is triggered whenever the state of gaze interaction with the object toggles (e.g., from gaze enter to gaze exit or vice versa). It provides a boolean argument indicating the current gaze state (true for gaze enter/stay, false for gaze exit). You can use this event for more complex interaction logic.</li>
-</ul>
-<p>For a more in-depth explanation, check out this <a href="https://www.youtube.com/watch?v=8p4erfeWatA&amp;list=PLBBRLwJVhEhNeLRaBjJh7O8cvGHFKOpGW&amp;index=1">video</a>.</p>
-<p>All feedback and contributions are more than welcome.</p>
 </article>
           </div>
 
